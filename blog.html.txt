@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resources & Blog | SmallStepz2Success — Light for the Journey</title>
+  <meta name="description" content="Articles, insights, and SmallStepz from Crystal C. Bingham — exploring Adam's journey, the Lamed Heart Pivot, shadow and light, and practical steps toward restored glory." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .article-hero {
+      min-height: 65vh;
+      display: flex;
+      align-items: center;
+      background: linear-gradient(160deg, var(--midnight) 0%, var(--deep-navy) 100%);
+      position: relative;
+      overflow: hidden;
+      padding: 140px 0 60px;
+    }
+    .article-hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse 70% 50% at 50% 60%, rgba(201,168,76,0.1) 0%, transparent 70%);
+    }
+    .article-hero .container { position: relative; z-index: 1; }
+
+    /* Article Modal / Full Read */
+    .article-modal-overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.75);
+      z-index: 2000;
+      align-items: flex-start;
+      justify-content: center;
+      padding: 2rem 1rem;
+      overflow-y: auto;
+    }
+    .article-modal-overlay.open { display: flex; }
+    .article-modal {
+      background: var(--cream);
+      border-radius: var(--radius-lg);
+      max-width: 760px;
+      width: 100%;
+      padding: 3rem;
+      position: relative;
+      margin: auto;
+    }
+    .article-modal-close {
+      position: absolute;
+      top: 1.25rem;
+      right: 1.25rem;
+      background: none;
+      border: none;
+      font-size: 1.5rem;
+      cursor: pointer;
+      color: var(--text-light);
+      transition: color var(--transition);
+    }
+    .article-modal-close:hover { color: var(--midnight); }
+    .article-modal h2 { font-size: 1.8rem; margin-bottom: 0.5rem; }
+    .article-modal .article-meta { font-size: 0.82rem; color: var(--muted); margin-bottom: 2rem; display: flex; gap: 1.25rem; flex-wrap: wrap; }
+    .article-modal p { font-size: 1rem; color: var(--text); line-height: 1.8; }
+    .article-modal h3 { margin: 2rem 0 0.75rem; font-size: 1.3rem; color: var(--midnight); }
+    .article-modal blockquote { margin: 1.5rem 0; font-size: 1.1rem; }
+    .article-modal ul { margin: 0.75rem 0 1.25rem 1.25rem; }
+    .article-modal ul li { margin-bottom: 0.5rem; color: var(--text); font-size: 0.96rem; list-style: disc; }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="container navbar__inner">
+      <a href="index.html" class="navbar__logo">
+        <span class="navbar__logo-main">SmallStepz2Success</span>
+        <span class="navbar__logo-sub">Spiritual &amp; Emotional Wellness</span>
+      </a>
+      <div class="navbar__links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="framework.html">The Framework</a>
+        <a href="coaching.html">Work With Me</a>
+        <a href="blog.html" class="active">Resources</a>
+        <a href="contact.html" class="btn btn-gold navbar__cta">Book a Session</a>
+      </div>
+      <button class="navbar__hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <div class="navbar__mobile" id="mobileNav">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="framework.html">The Framework</a>
+    <a href="coaching.html">Work With Me</a>
+    <a href="blog.html">Resources</a>
+    <a href="contact.html">Book a Session</a>
+  </div>
+  <div class="mobile-overlay" id="overlay"></div>
+
+  <!-- PAGE HERO -->
+  <section class="article-hero text-center">
+    <div class="container">
+      <span class="label">Insights &amp; SmallStepz</span>
+      <h1 style="color:var(--white);">Light for the Journey</h1>
+      <p style="color:var(--muted); font-size:1.1rem; max-width:580px; margin:1rem auto 2rem;">Articles, reflections, and practical SmallStepz from Crystal C. Bingham — exploring Adam's journey, the Lamed pivot, shadow and light, and your path to restored glory.</p>
+      <div style="display:flex; flex-wrap:wrap; gap:0.75rem; justify-content:center;">
+        <button class="filter-btn quiz-btn selected" data-filter="all">All</button>
+        <button class="filter-btn quiz-btn" data-filter="spiritual">Spiritual Insight</button>
+        <button class="filter-btn quiz-btn" data-filter="smallstepz">SmallStepz</button>
+        <button class="filter-btn quiz-btn" data-filter="heartdna">The Heart Pattern</button>
+        <button class="filter-btn quiz-btn" data-filter="shadow">Shadow &amp; Light</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== FEATURED ARTICLE ======================== -->
+  <section class="section section--cream" style="padding-bottom:0;">
+    <div class="container">
+      <span class="label reveal">Featured</span>
+      <div class="reveal" style="background:linear-gradient(135deg,var(--midnight),var(--deep-navy)); border-radius:var(--radius-lg); overflow:hidden; display:grid; grid-template-columns:1fr 1.5fr;">
+        <div style="display:flex; align-items:center; justify-content:center; font-size:7rem; padding:2.5rem; background:linear-gradient(160deg,rgba(201,168,76,0.08),transparent);">🌑</div>
+        <div style="padding:3rem 2.5rem;">
+          <div style="font-size:0.72rem; font-weight:700; letter-spacing:0.15em; text-transform:uppercase; color:var(--gold); margin-bottom:0.75rem;">Featured · Spiritual Insight</div>
+          <h2 style="color:var(--white); font-size:clamp(1.4rem,3vw,2rem); margin-bottom:1rem;">Why Living in Shame Turns You Into a Spiritual Vampire</h2>
+          <p style="color:var(--muted); margin-bottom:1.5rem; line-height:1.75;">When Adam turned his back on God, he didn't just lose relationship — he lost the capacity for honest self-reflection. Without light, there is no mirror. And without a mirror, there is no true growth. Here is what that means for your healing journey today.</p>
+          <button class="btn btn-gold read-more-btn" data-article="vampire" style="border:none; cursor:pointer;"><i class="fa-regular fa-book-open-reader"></i> Read Full Article</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== BLOG GRID ======================== -->
+  <section class="section section--cream">
+    <div class="container">
+      <div id="blog-grid" class="blog-grid">
+
+        <!-- Article 1 -->
+        <div class="blog-card reveal" data-category="heartdna">
+          <div class="blog-card__banner" style="background:linear-gradient(135deg,#1b2d45,#2a5088); font-family:'Cinzel',serif; font-size:4rem; color:var(--gold-light); letter-spacing:-2px;">ל</div>
+          <div class="blog-card__body">
+            <div class="blog-card__tag">The Heart Pattern</div>
+            <h3>What the 22 Hebrew Letters Reveal About the Human Heart</h3>
+            <p>From Aleph to Tav — how the alphabet maps to your autosomes and what that means for emotional healing and spiritual growth.</p>
+            <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:0.5rem;">
+              <div class="blog-card__meta"><i class="fa-regular fa-clock"></i> 8 min read</div>
+              <button class="read-more-btn" data-article="22letters" style="background:none; border:none; color:var(--gold); font-weight:700; font-size:0.88rem; cursor:pointer;">Read More →</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Article 2 -->
+        <div class="blog-card reveal" data-category="smallstepz" style="transition-delay:0.1s;">
+          <div class="blog-card__banner" style="background:linear-gradient(135deg,#78350f,#c9a84c);">☀️</div>
+          <div class="blog-card__body">
+            <div class="blog-card__tag">SmallStepz</div>
+            <h3>How to Take One SmallStep Today from Shadow Toward Light</h3>
+            <p>You don't need a complete transformation — you need one degree of turn. Here are five practical SmallStepz you can take this week.</p>
+            <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:0.5rem;">
+              <div class="blog-card__meta"><i class="fa-regular fa-clock"></i> 5 min read</div>
+              <button class="read-more-btn" data-article="smallstep" style="background:none; border:none; color:var(--gold); font-weight:700; font-size:0.88rem; cursor:pointer;">Read More →</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Article 3 -->
+        <div class="blog-card reveal" data-category="spiritual" style="transition-delay:0.2s;">
+          <div class="blog-card__banner" style="background:linear-gradient(135deg,#0a1220,#1b2d45);">📜</div>
+          <div class="blog-card__body">
+            <div class="blog-card__tag">Spiritual Insight</div>
+            <h3>What Adam's Fear and Hiding Teach Us About Trauma</h3>
+            <p>Genesis 3:10 is not just theology — it is the first clinical description of trauma response: fear, shame, and the instinct to hide. What does the ancient text reveal about how we heal?</p>
+            <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:0.5rem;">
+              <div class="blog-card__meta"><i class="fa-regular fa-clock"></i> 7 min read</div>
+              <button class="read-more-btn" data-article="fear" style="background:none; border:none; color:var(--gold); font-weight:700; font-size:0.88rem; cursor:pointer;">Read More →</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Article 4 -->
+        <div class="blog-card reveal" data-category="shadow">
+          <div class="blog-card__banner" style="background:linear-gradient(135deg,#2d2354,#4b3f72);">🌓</div>
+          <div class="blog-card__body">
+            <div class="blog-card__tag">Shadow &amp; Light</div>
+            <h3>Are You a Spiritual Vampire? 5 Signs You're Stuck in Adam's Shadow</h3>
+            <p>No reflection. No genuine growth. Consuming but not maturing. Here are five honest signs that your Lamed may be facing away from the light right now.</p>
+            <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:0.5rem;">
+              <div class="blog-card__meta"><i class="fa-regular fa-clock"></i> 6 min read</div>
+              <button class="read-more-btn" data-article="signs" style="background:none; border:none; color:var(--gold); font-weight:700; font-size:0.88rem; cursor:pointer;">Read More →</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Article 5 -->
+        <div class="blog-card reveal" data-category="smallstepz" style="transition-delay:0.1s;">
+          <div class="blog-card__banner" style="background:linear-gradient(135deg,#0d1b2a,#1e3a5f);">🧬</div>
+          <div class="blog-card__body">
+            <div class="blog-card__tag">SmallStepz</div>
+            <h3>Breaking Generational Patterns: The "Son of Kush" Energy</h3>
+            <p>Some of what you carry isn't yours alone — it was passed down. How the framework helps you identify inherited shadow patterns and stop the transmission.</p>
+            <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:0.5rem;">
+              <div class="blog-card__meta"><i class="fa-regular fa-clock"></i> 9 min read</div>
+              <button class="read-more-btn" data-article="generational" style="background:none; border:none; color:var(--gold); font-weight:700; font-size:0.88rem; cursor:pointer;">Read More →</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Article 6 -->
+        <div class="blog-card reveal" data-category="heartdna" style="transition-delay:0.2s;">
+          <div class="blog-card__banner" style="background:linear-gradient(135deg,#78350f,#92400e);">🌟</div>
+          <div class="blog-card__body">
+            <div class="blog-card__tag">The Heart Pattern</div>
+            <h3>What "All the Glory of Adam" Actually Means for You Today</h3>
+            <p>The Dead Sea Scrolls promise that the righteous will inherit "all the glory of Adam." That's not a distant future — it's a present possibility. Here's what it looks like in practice.</p>
+            <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:0.5rem;">
+              <div class="blog-card__meta"><i class="fa-regular fa-clock"></i> 7 min read</div>
+              <button class="read-more-btn" data-article="glory" style="background:none; border:none; color:var(--gold); font-weight:700; font-size:0.88rem; cursor:pointer;">Read More →</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== FREE RESOURCE ======================== -->
+  <section class="section section--dark text-center">
+    <div class="container" style="max-width:640px;">
+      <span class="label reveal">Free Resource</span>
+      <h2 class="reveal" style="color:var(--white);">Are You a Spiritual Vampire?</h2>
+      <div class="divider"></div>
+      <p class="reveal" style="color:var(--muted); margin-bottom:2rem;">Download Crystal's free guide: <em>"5 Signs You're Stuck in Adam's Shadow — and Your First SmallStep Back to the Light."</em> Get it free when you join the SmallStepz community.</p>
+      <div class="reveal">
+        <div style="background:rgba(255,255,255,0.05); border:1px solid rgba(201,168,76,0.3); border-radius:var(--radius-lg); padding:2rem 2.5rem;">
+          <div id="email-success" style="display:none; color:var(--gold-light); margin-bottom:1rem; font-style:italic;">✨ You're in! Check your inbox shortly.</div>
+          <form id="emailForm" style="display:flex; gap:1rem; flex-wrap:wrap;" onsubmit="handleEmailForm(event)">
+            <input type="email" placeholder="Your email address" required style="flex:1; min-width:220px; padding:0.85rem 1.1rem; border-radius:var(--radius); border:1.5px solid rgba(201,168,76,0.3); background:rgba(255,255,255,0.05); color:var(--cream); font-size:0.95rem; outline:none;">
+            <button type="submit" class="btn btn-gold" style="white-space:nowrap;">Get Free Guide</button>
+          </form>
+          <p style="font-size:0.78rem; color:var(--muted); margin-top:0.75rem; margin-bottom:0;">No spam. Unsubscribe anytime. Your email is sacred.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ARTICLE MODALS -->
+  <!-- Vampire Article -->
+  <div class="article-modal-overlay" id="modal-vampire">
+    <div class="article-modal">
+      <button class="article-modal-close" data-close="modal-vampire">&times;</button>
+      <div style="font-size:0.72rem; font-weight:700; letter-spacing:0.15em; text-transform:uppercase; color:var(--gold); margin-bottom:0.5rem;">Spiritual Insight</div>
+      <h2>Why Living in Shame Turns You Into a Spiritual Vampire</h2>
+      <div class="article-meta">
+        <span><i class="fa-regular fa-user"></i> Crystal C. Bingham</span>
+        <span><i class="fa-regular fa-clock"></i> 6 min read</span>
+      </div>
+      <p>In the beginning, God said: <em>"Let there be light."</em> And there was light. Adam and Eve walked in that light — open, unashamed, reflective of God's image. There were no shadows in their hearts.</p>
+      <p>Then the turn happened.</p>
+      <blockquote>"I was afraid, because I was naked; and I hid myself." — Genesis 3:10 (KJV)</blockquote>
+      <p>The moment Adam turned his back on God, something profound and terrible happened: a shadow formed. Not just around him — <em>in</em> him. Where there is no light, there is no reflection. And here is where I want you to sit with something radical:</p>
+      <h3>The Vampire Cannot See Itself</h3>
+      <p>In mythology, a vampire casts no reflection in a mirror. It cannot see itself. It cannot examine itself. It cannot know itself. It can only react, consume, and survive — but it cannot <em>grow up.</em> It is frozen in its state of spiritual death.</p>
+      <p>This is the picture of living in shame. When you are ashamed of who you are, you cannot look clearly at who you are. The mirror becomes a threat. Self-examination becomes unbearable. So instead, you:</p>
+      <ul>
+        <li>React defensively to any feedback</li>
+        <li>Blame others for your inner experience</li>
+        <li>Hide the real you behind masks and survival strategies</li>
+        <li>Consume relationships, experiences, and numbing behaviors — but never mature</li>
+        <li>Repeat patterns you cannot see clearly enough to change</li>
+      </ul>
+      <p>This is what the Apocrypha calls "spiritual death and contained sorrows" (Wisdom of Solomon 10:1). Adam fell into this state — and <em>"we all that come of thee"</em> (2 Esdras 7:48) have inherited the template.</p>
+      <h3>The First SmallStep: Turn Toward the Light</h3>
+      <p>You cannot get rid of the shadow by fighting it. You cannot grow by staring at the shadow. You return to reflection — to genuine self-seeing — by <strong>turning back toward the light.</strong></p>
+      <p>One honest admission. One moment of true self-reflection instead of deflection. One act of letting the light in, even if just for a second. That is a SmallStep. And it is enough to begin.</p>
+      <p>The Lamed (ל) is the pivot point. Your heart already has the capacity to turn. The question is: which direction will it face today?</p>
+      <div style="margin-top:2rem; padding-top:2rem; border-top:1px solid var(--cream-dark);">
+        <a href="contact.html" class="btn btn-gold">Book a Session with Crystal →</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- 22 Letters Article -->
+  <div class="article-modal-overlay" id="modal-22letters">
+    <div class="article-modal">
+      <button class="article-modal-close" data-close="modal-22letters">&times;</button>
+      <div style="font-size:0.72rem; font-weight:700; letter-spacing:0.15em; text-transform:uppercase; color:var(--gold); margin-bottom:0.5rem;">The Heart Pattern</div>
+      <h2>What the 22 Hebrew Letters Reveal About the Human Heart</h2>
+      <div class="article-meta">
+        <span><i class="fa-regular fa-user"></i> Crystal C. Bingham</span>
+        <span><i class="fa-regular fa-clock"></i> 8 min read</span>
+      </div>
+      <p>The Hebrew alphabet contains 22 letters. The human body contains 22 autosomes — the non-sex chromosomes that carry the instructions for nearly everything your body does and who you become. I believe this correspondence is not accidental. It is the <strong>DNA of the Heart</strong>.</p>
+      <h3>Lower, Middle, and Upper</h3>
+      <p>When you map the 22 letters against the 22 autosomes, a pattern emerges:</p>
+      <ul>
+        <li><strong>Letters 1–11 (Aleph–Kaf):</strong> Correspond to survival, instinct, the shadow patterns of shame, fear, narcissism, and chaos energy. The Adamic fall lives here.</li>
+        <li><strong>Letter 12 — Lamed (ל):</strong> The tallest Hebrew letter. The heart bridge. The pivot. This is where the coaching decision happens: down into shadow, or upward into light.</li>
+        <li><strong>Letters 13–22 (Mem–Tav):</strong> Correspond to spirit, wisdom, discernment, creativity, and the "glory of Adam" that the Dead Sea Scrolls say is recoverable.</li>
+      </ul>
+      <h3>What This Means for You</h3>
+      <p>Your emotional and spiritual life is not random. There is an architecture to it — a pattern. And the Lamed is the hinge in that architecture. Every day, your heart is either moving toward the lower realm or the upper. Your Lamed is always pointing somewhere.</p>
+      <p>Coaching helps you become conscious of which way it is pointing — and choose to move it, one degree at a time, back toward the light.</p>
+      <div style="margin-top:2rem; padding-top:2rem; border-top:1px solid var(--cream-dark);">
+        <a href="framework.html" class="btn btn-gold">Explore the Full Framework →</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- SmallStep Article -->
+  <div class="article-modal-overlay" id="modal-smallstep">
+    <div class="article-modal">
+      <button class="article-modal-close" data-close="modal-smallstep">&times;</button>
+      <div style="font-size:0.72rem; font-weight:700; letter-spacing:0.15em; text-transform:uppercase; color:var(--gold); margin-bottom:0.5rem;">SmallStepz</div>
+      <h2>How to Take One SmallStep Today from Shadow Toward Light</h2>
+      <div class="article-meta">
+        <span><i class="fa-regular fa-user"></i> Crystal C. Bingham</span>
+        <span><i class="fa-regular fa-clock"></i> 5 min read</span>
+      </div>
+      <p>The name SmallStepz2Success is not metaphor — it is method. Transformation does not come in one giant leap. It comes in one honest, intentional, courageous small step, repeated. Here are five you can take today.</p>
+      <h3>1. Make One Honest Admission</h3>
+      <p>Just one. Not a full confession. Not a complete unraveling. Just one honest thing you have been hiding from yourself. Say it out loud, or write it down. This alone moves your Lamed.</p>
+      <h3>2. Drop One Blame</h3>
+      <p>Identify one situation where you have been blaming someone else for your inner state. Just notice it. You don't have to resolve it — just see it without defending it. That is the beginning of a turn.</p>
+      <h3>3. Set One Boundary</h3>
+      <p>Living in shadow often means chronic boundary violations — yours violated by others, or yours violating others. Choose one relationship where you need to say "no" or "not anymore" — and say it.</p>
+      <h3>4. One Act of Self-Kindness</h3>
+      <p>Shame drives self-punishment. The return to light includes learning to treat yourself the way God's image deserves to be treated. Do one small, kind thing for yourself today. Not indulgence — kindness.</p>
+      <h3>5. One Moment with God Instead of Numbing</h3>
+      <p>When the urge to scroll, eat, drink, or distract arises — just once today — sit with it for two minutes instead. Turn your face toward the light for just that long. That is a SmallStep.</p>
+      <div style="margin-top:2rem; padding-top:2rem; border-top:1px solid var(--cream-dark);">
+        <a href="coaching.html" class="btn btn-gold">Work With Crystal on Your SmallStepz →</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Generic modals for other articles -->
+  <div class="article-modal-overlay" id="modal-fear">
+    <div class="article-modal">
+      <button class="article-modal-close" data-close="modal-fear">&times;</button>
+      <div style="font-size:0.72rem; font-weight:700; letter-spacing:0.15em; text-transform:uppercase; color:var(--gold); margin-bottom:0.5rem;">Spiritual Insight</div>
+      <h2>What Adam's Fear and Hiding Teach Us About Trauma</h2>
+      <div class="article-meta"><span><i class="fa-regular fa-user"></i> Crystal C. Bingham</span><span><i class="fa-regular fa-clock"></i> 7 min read</span></div>
+      <p>Genesis 3:10 may be the oldest clinical description of trauma response in recorded history. Adam's words — "I was afraid… I was naked… I hid myself" — map almost perfectly onto what modern trauma science describes as the freeze-hide-shame response.</p>
+      <p>Fear. Exposure. Concealment. These are not just spiritual failures — they are the brain's survival mechanism activated in a person who no longer feels safe.</p>
+      <h3>The Trauma of Separation</h3>
+      <p>Adam's deepest wound was not the eating of fruit — it was the sudden experience of <em>separation</em>. The loss of seamless connection with God, with Eve, with himself. Separation is the core wound beneath most human trauma.</p>
+      <p>And the first response to that separation was: hide. Build walls. Blame others. Protect the exposed self at all costs.</p>
+      <h3>Healing the Hiding</h3>
+      <p>Trauma healing is not simply about processing events — it is about learning that it is safe to be seen again. Safe to step out of hiding. Safe to stand in the light without shame. This is the journey from Realm 3 back to Realm 4.</p>
+      <div style="margin-top:2rem; padding-top:2rem; border-top:1px solid var(--cream-dark);">
+        <a href="contact.html" class="btn btn-gold">Begin Your Healing Journey →</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="article-modal-overlay" id="modal-signs">
+    <div class="article-modal">
+      <button class="article-modal-close" data-close="modal-signs">&times;</button>
+      <div style="font-size:0.72rem; font-weight:700; letter-spacing:0.15em; text-transform:uppercase; color:var(--gold); margin-bottom:0.5rem;">Shadow &amp; Light</div>
+      <h2>Are You a Spiritual Vampire? 5 Signs You're Stuck in Adam's Shadow</h2>
+      <div class="article-meta"><span><i class="fa-regular fa-user"></i> Crystal C. Bingham</span><span><i class="fa-regular fa-clock"></i> 6 min read</span></div>
+      <p>This is not a judgment. It is an invitation to honest self-reflection — which is itself the first act of turning back toward the light. Here are five signs that your Lamed may currently be facing away from the light.</p>
+      <ul>
+        <li><strong>1. You cannot receive feedback without defending.</strong> Every critique feels like an attack. You explain, justify, or deflect instead of sitting with what might be true.</li>
+        <li><strong>2. You blame your emotional state on others.</strong> They made you feel this way. They caused your reaction. You feel no access to your own contribution to the situation.</li>
+        <li><strong>3. You're consuming but not changing.</strong> Books, podcasts, workshops, church — but the same patterns persist. Information without transformation. This is consuming without reflecting.</li>
+        <li><strong>4. Your relationships feel like survival, not growth.</strong> You manage and survive people rather than genuinely connecting with and being changed by them.</li>
+        <li><strong>5. You haven't grown up in an area you know you need to.</strong> There's a thing you've known for years. You haven't moved on it. That's your Lamed refusing to pivot.</li>
+      </ul>
+      <p>Recognizing these signs <em>is</em> a SmallStep. You just looked in the mirror. That's the beginning of the return.</p>
+      <div style="margin-top:2rem; padding-top:2rem; border-top:1px solid var(--cream-dark);">
+        <a href="contact.html" class="btn btn-gold">Let's Work on This Together →</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="article-modal-overlay" id="modal-generational">
+    <div class="article-modal">
+      <button class="article-modal-close" data-close="modal-generational">&times;</button>
+      <div style="font-size:0.72rem; font-weight:700; letter-spacing:0.15em; text-transform:uppercase; color:var(--gold); margin-bottom:0.5rem;">SmallStepz</div>
+      <h2>Breaking Generational Patterns: The "Son of Kush" Energy</h2>
+      <div class="article-meta"><span><i class="fa-regular fa-user"></i> Crystal C. Bingham</span><span><i class="fa-regular fa-clock"></i> 9 min read</span></div>
+      <p>2 Esdras 7:48 makes something clear: <em>"Thou art not fallen alone, but we all that come of thee."</em> Adam's shadow did not stay with Adam. It traveled — through generations, through family lines, through DNA, through learned behaviors, through inherited emotional scripts.</p>
+      <p>I call this the "son of Kush" energy — the pattern of inherited darkness that shows up in your family and feels like "just the way we are."</p>
+      <h3>What Generational Patterns Look Like</h3>
+      <ul>
+        <li>The same kind of relationship dynamic repeating across generations</li>
+        <li>Family-wide patterns of shame, avoidance, rage, or passivity</li>
+        <li>A shared "forbidden" topic that no one can touch</li>
+        <li>Physical or mental health patterns with an emotional root</li>
+      </ul>
+      <h3>How SmallStepz Breaks the Chain</h3>
+      <p>You cannot change what happened before you were born. But you can choose to stop being the transmission point. One honest conversation. One boundary that wasn't set for generations. One refusal to pass the shadow to the next person in line. That is a generational SmallStep — and it matters more than you know.</p>
+      <div style="margin-top:2rem; padding-top:2rem; border-top:1px solid var(--cream-dark);">
+        <a href="coaching.html" class="btn btn-gold">Book a Session to Work on Generational Patterns →</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="article-modal-overlay" id="modal-glory">
+    <div class="article-modal">
+      <button class="article-modal-close" data-close="modal-glory">&times;</button>
+      <div style="font-size:0.72rem; font-weight:700; letter-spacing:0.15em; text-transform:uppercase; color:var(--gold); margin-bottom:0.5rem;">The Heart Pattern</div>
+      <h2>What "All the Glory of Adam" Actually Means for You Today</h2>
+      <div class="article-meta"><span><i class="fa-regular fa-user"></i> Crystal C. Bingham</span><span><i class="fa-regular fa-clock"></i> 7 min read</span></div>
+      <p>The Dead Sea Scrolls (1QS 4:5) contain a stunning promise: the righteous will inherit <em>"all the glory of Adam."</em> But what exactly did Adam have — and how do you get it back?</p>
+      <h3>What Adam Had Before the Fall</h3>
+      <p>Multiple ancient sources describe Adam's pre-fall state in remarkable terms. The Dead Sea Scrolls speak of his "glory" as something radiant and extraordinary. Wisdom of Solomon describes the wisdom that "brought him out" — suggesting his original state was one of profound clarity and spiritual perception.</p>
+      <p>Emotionally and spiritually, Adam's original state included: complete openness (no hiding), authentic connection with God and Eve, self-knowledge without shame, and the capacity to reflect God's image clearly.</p>
+      <h3>Glory in Practical Terms Today</h3>
+      <p>Restored glory is not about becoming perfect or transcendent. It is about living in your <em>original design</em> — with the honesty, openness, and God-connection you were built for. In coaching terms:</p>
+      <ul>
+        <li>The ability to see yourself clearly and honestly</li>
+        <li>Relationships marked by authentic connection, not survival</li>
+        <li>A sense of being known and loved in your actual state</li>
+        <li>Spiritual aliveness — growing, not just enduring</li>
+      </ul>
+      <p>This is not a distant eschatological promise. It is available now — one SmallStep at a time.</p>
+      <div style="margin-top:2rem; padding-top:2rem; border-top:1px solid var(--cream-dark);">
+        <a href="coaching.html" class="btn btn-gold">Begin Reclaiming Your Glory →</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- CTA -->
+  <section class="section cta-banner text-center">
+    <div class="container">
+      <h2 class="reveal" style="color:var(--white);">Ready to Go Deeper Than an Article?</h2>
+      <p class="reveal" style="color:var(--muted); max-width:480px; margin:1rem auto 2rem;">Reading about the light is the beginning. Walking in it requires a map and a guide. Book a session and let's take your next SmallStep together.</p>
+      <a href="coaching.html" class="btn btn-gold reveal"><i class="fa-solid fa-sun"></i> See Coaching Offers</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <span class="navbar__logo-main">SmallStepz2Success</span>
+          <span class="navbar__logo-sub" style="display:block; font-size:0.65rem; letter-spacing:0.18em; text-transform:uppercase; color:var(--muted);">Spiritual &amp; Emotional Wellness Coaching</span>
+          <p>Helping you move from Adam's shadow to restored glory — one small, courageous step at a time. Founded by Crystal C. Bingham.</p>
+        </div>
+        <div>
+          <div class="footer__heading">Navigate</div>
+          <ul class="footer__links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Crystal</a></li>
+            <li><a href="framework.html">The Framework</a></li>
+            <li><a href="coaching.html">Work With Me</a></li>
+            <li><a href="blog.html">Resources</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer__heading">Articles</div>
+          <ul class="footer__links">
+            <li><a href="#" class="read-more-btn" data-article="vampire">Spiritual Vampire</a></li>
+            <li><a href="#" class="read-more-btn" data-article="22letters">22 Hebrew Letters</a></li>
+            <li><a href="#" class="read-more-btn" data-article="smallstep">5 SmallStepz Today</a></li>
+            <li><a href="#" class="read-more-btn" data-article="signs">5 Signs of Shadow</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2025 SmallStepz2Success · Crystal C. Bingham. All Rights Reserved.</p>
+        <p class="footer__notice">⚠️ All content is the original intellectual work of Crystal C. Bingham. Unauthorized use constitutes spiritual and legal theft.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    // Article modals
+    document.querySelectorAll('.read-more-btn').forEach(btn => {
+      btn.addEventListener('click', function(e) {
+        e.preventDefault();
+        const article = this.dataset.article;
+        const modal = document.getElementById('modal-' + article);
+        if (modal) {
+          modal.classList.add('open');
+          document.body.style.overflow = 'hidden';
+        }
+      });
+    });
+
+    document.querySelectorAll('.article-modal-close').forEach(btn => {
+      btn.addEventListener('click', function() {
+        const id = this.dataset.close;
+        document.getElementById(id)?.classList.remove('open');
+        document.body.style.overflow = '';
+      });
+    });
+
+    document.querySelectorAll('.article-modal-overlay').forEach(overlay => {
+      overlay.addEventListener('click', function(e) {
+        if (e.target === this) {
+          this.classList.remove('open');
+          document.body.style.overflow = '';
+        }
+      });
+    });
+
+    // Category filter
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+      btn.addEventListener('click', function() {
+        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('selected'));
+        this.classList.add('selected');
+        const filter = this.dataset.filter;
+        document.querySelectorAll('#blog-grid .blog-card').forEach(card => {
+          const cat = card.dataset.category;
+          card.style.display = (filter === 'all' || cat === filter) ? '' : 'none';
+        });
+      });
+    });
+
+    // Email form
+    function handleEmailForm(e) {
+      e.preventDefault();
+      const success = document.getElementById('email-success');
+      if (success) {
+        e.target.style.display = 'none';
+        success.style.display = 'block';
+      }
+    }
+  </script>
+</body>
+</html>

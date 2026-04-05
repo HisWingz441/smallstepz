@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Work With Me | SmallStepz2Success — Coaching Offers</title>
+  <meta name="description" content="Book a 1:1 coaching session with Crystal C. Bingham — Adam Journey Session, Lamed Heart Pivot, 22-Day Heart Light Reset, and group workshops." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="container navbar__inner">
+      <a href="index.html" class="navbar__logo">
+        <span class="navbar__logo-main">SmallStepz2Success</span>
+        <span class="navbar__logo-sub">Spiritual &amp; Emotional Wellness</span>
+      </a>
+      <div class="navbar__links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="framework.html">The Framework</a>
+        <a href="coaching.html" class="active">Work With Me</a>
+        <a href="blog.html">Resources</a>
+        <a href="contact.html" class="btn btn-gold navbar__cta">Book a Session</a>
+      </div>
+      <button class="navbar__hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <div class="navbar__mobile" id="mobileNav">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="framework.html">The Framework</a>
+    <a href="coaching.html">Work With Me</a>
+    <a href="blog.html">Resources</a>
+    <a href="contact.html">Book a Session</a>
+  </div>
+  <div class="mobile-overlay" id="overlay"></div>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="container">
+      <span class="label">Choose Your Path</span>
+      <h1>Work With Crystal</h1>
+      <p class="lead">Every offer is built around one question: <em>"What SmallStep will turn your Lamed toward restored glory today?"</em></p>
+    </div>
+  </section>
+
+  <!-- ======================== WHO THIS IS FOR ======================== -->
+  <section class="section section--cream">
+    <div class="container">
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:3rem; align-items:center;">
+        <div>
+          <span class="label reveal">Is This for You?</span>
+          <h2 class="reveal">You're in the Right Place If…</h2>
+          <div class="divider" style="margin-left:0;"></div>
+          <div class="steps">
+            <div class="step reveal">
+              <div class="step__num"><i class="fa-solid fa-check" style="font-size:0.9rem;"></i></div>
+              <div class="step__body">
+                <h4>You feel stuck in patterns you can't explain</h4>
+                <p>Fear, shame, defensiveness, or blame-shifting that seems to take over no matter how hard you try.</p>
+              </div>
+            </div>
+            <div class="step reveal">
+              <div class="step__num"><i class="fa-solid fa-check" style="font-size:0.9rem;"></i></div>
+              <div class="step__body">
+                <h4>You want spiritually-rooted healing</h4>
+                <p>Traditional therapy hasn't touched the depth you need. You want something that honors both the soul and the mind.</p>
+              </div>
+            </div>
+            <div class="step reveal">
+              <div class="step__num"><i class="fa-solid fa-check" style="font-size:0.9rem;"></i></div>
+              <div class="step__body">
+                <h4>You're ready for radical honesty</h4>
+                <p>Crystal will gently but clearly show you where your Lamed is pointed — and that requires courage and openness.</p>
+              </div>
+            </div>
+            <div class="step reveal">
+              <div class="step__num"><i class="fa-solid fa-check" style="font-size:0.9rem;"></i></div>
+              <div class="step__body">
+                <h4>You believe in small, sustainable change</h4>
+                <p>You're not looking for a quick fix — you want a map and a guide for the real journey back to your original light.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="reveal" style="transition-delay:0.15s;">
+          <div style="background:linear-gradient(160deg,var(--midnight),var(--deep-navy)); border-radius:var(--radius-lg); padding:2.5rem; border:1px solid rgba(201,168,76,0.25);">
+            <div style="font-size:3rem; margin-bottom:1rem; text-align:center;">🌟</div>
+            <h3 style="color:var(--gold-light); text-align:center; margin-bottom:1.25rem;">Crystal's Coaching Approach</h3>
+            <ul style="list-style:none; display:flex; flex-direction:column; gap:0.85rem;">
+              <li style="display:flex; gap:0.75rem; font-size:0.92rem; color:var(--cream);"><i class="fa-solid fa-circle-dot" style="color:var(--gold); margin-top:5px;"></i><span><strong style="color:var(--gold-light);">Biblically-rooted:</strong> Grounded in the 1611 KJV, Apocrypha, and Dead Sea Scrolls.</span></li>
+              <li style="display:flex; gap:0.75rem; font-size:0.92rem; color:var(--cream);"><i class="fa-solid fa-circle-dot" style="color:var(--gold); margin-top:5px;"></i><span><strong style="color:var(--gold-light);">Trauma-informed:</strong> Deep respect for your pace and your story.</span></li>
+              <li style="display:flex; gap:0.75rem; font-size:0.92rem; color:var(--cream);"><i class="fa-solid fa-circle-dot" style="color:var(--gold); margin-top:5px;"></i><span><strong style="color:var(--gold-light);">Esoteric-friendly:</strong> Hebrew letter mysticism, heart-DNA patterns, and ancient wisdom welcomed.</span></li>
+              <li style="display:flex; gap:0.75rem; font-size:0.92rem; color:var(--cream);"><i class="fa-solid fa-circle-dot" style="color:var(--gold); margin-top:5px;"></i><span><strong style="color:var(--gold-light);">SmallStepz-focused:</strong> No overwhelm — just one clear, actionable step after each session.</span></li>
+              <li style="display:flex; gap:0.75rem; font-size:0.92rem; color:var(--cream);"><i class="fa-solid fa-circle-dot" style="color:var(--gold); margin-top:5px;"></i><span><strong style="color:var(--gold-light);">Original framework:</strong> You will not find this anywhere else. This is Crystal's.</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== OFFERS ======================== -->
+  <section class="section section--dark" id="offers">
+    <div class="container text-center">
+      <span class="label reveal">Coaching Offers</span>
+      <h2 class="reveal">Choose Your Path Back to Light</h2>
+      <div class="divider"></div>
+      <p class="section-sub reveal" style="color:var(--muted);">All sessions are offered via Zoom. In-person sessions may be available — contact Crystal to inquire.</p>
+
+      <div class="offer-grid">
+        <!-- Offer 1 -->
+        <div class="offer-card reveal">
+          <div class="offer-card__icon"><i class="fa-solid fa-map"></i></div>
+          <h3>Adam Journey Session</h3>
+          <p>Your first step. Identify exactly where you are on the Light–Turn–Shadow–Return arc and receive your personalized first SmallStep.</p>
+          <div class="price">$97 <span>/ 60 min session</span></div>
+          <ul class="offer-features">
+            <li><i class="fa-solid fa-check"></i> Full Four Realms mapping of your current position</li>
+            <li><i class="fa-solid fa-check"></i> Identification of your primary fear/shame/blame pattern</li>
+            <li><i class="fa-solid fa-check"></i> One clear, personalized SmallStep to take this week</li>
+            <li><i class="fa-solid fa-check"></i> Written summary sent after session</li>
+            <li><i class="fa-solid fa-check"></i> Zoom session (60 minutes)</li>
+          </ul>
+          <a href="contact.html?offer=adam-journey" class="btn btn-outline" style="width:100%; justify-content:center;">Book This Session</a>
+        </div>
+
+        <!-- Offer 2 — Featured -->
+        <div class="offer-card reveal" style="transition-delay:0.1s; border-color:rgba(201,168,76,0.55); position:relative;">
+          <div style="position:absolute; top:-14px; left:50%; transform:translateX(-50%); background:var(--gold); color:var(--midnight); font-size:0.72rem; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; padding:0.3rem 1rem; border-radius:20px;">Most Powerful</div>
+          <div class="offer-card__icon" style="background:rgba(201,168,76,0.25); border-color:var(--gold);"><i class="fa-solid fa-heart"></i></div>
+          <h3>Lamed Heart Pivot Session</h3>
+          <p>Deep-dive work. We locate your specific Lamed turning-point event and do the practical, sacred work of pivoting back toward the light.</p>
+          <div class="price">$147 <span>/ 90 min session</span></div>
+          <ul class="offer-features">
+            <li><i class="fa-solid fa-check"></i> Everything in the Adam Journey Session</li>
+            <li><i class="fa-solid fa-check"></i> Deep-dive into one specific fear, shame, or blame pattern</li>
+            <li><i class="fa-solid fa-check"></i> Lamed pivot work — moving your heart one degree toward light</li>
+            <li><i class="fa-solid fa-check"></i> Exploration of generational/inherited patterns if applicable</li>
+            <li><i class="fa-solid fa-check"></i> 3 actionable SmallStepz with accountability check-in</li>
+            <li><i class="fa-solid fa-check"></i> Zoom session (90 minutes)</li>
+          </ul>
+          <a href="contact.html?offer=lamed-pivot" class="btn btn-gold" style="width:100%; justify-content:center;">Book This Session</a>
+        </div>
+
+        <!-- Offer 3 -->
+        <div class="offer-card reveal" style="transition-delay:0.2s;">
+          <div class="offer-card__icon"><i class="fa-solid fa-moon-stars"></i></div>
+          <h3>22-Day Heart Light Reset</h3>
+          <p>A structured 22-day transformation — one SmallStep per day — moving through each dimension of the Heart DNA Pattern from shadow to restored glory.</p>
+          <div class="price">$444 <span>/ full program</span></div>
+          <ul class="offer-features">
+            <li><i class="fa-solid fa-check"></i> Opening intensive session (90 min) to map your realm</li>
+            <li><i class="fa-solid fa-check"></i> 22 daily guided SmallStepz (audio + written prompts)</li>
+            <li><i class="fa-solid fa-check"></i> 3 mid-program check-in calls (30 min each)</li>
+            <li><i class="fa-solid fa-check"></i> Access to the Heart DNA letter guide</li>
+            <li><i class="fa-solid fa-check"></i> Closing integration session (60 min)</li>
+            <li><i class="fa-solid fa-check"></i> Private messaging support throughout</li>
+          </ul>
+          <a href="contact.html?offer=22-day-reset" class="btn btn-outline" style="width:100%; justify-content:center;">Inquire About This Program</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== GROUP & EXTRA ======================== -->
+  <section class="section section--cream-dark">
+    <div class="container">
+      <div class="text-center">
+        <span class="label reveal">Additional Offerings</span>
+        <h2 class="reveal">Group &amp; Specialized Sessions</h2>
+        <div class="divider"></div>
+      </div>
+
+      <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:1.75rem; margin-top:2.5rem;">
+
+        <div style="background:var(--white); border-radius:var(--radius-lg); padding:2rem; box-shadow:var(--shadow-sm);" class="reveal">
+          <div style="font-size:2.5rem; margin-bottom:1rem;">👥</div>
+          <h3 style="color:var(--midnight); margin-bottom:0.5rem;">From Spiritual Vampire to Reflecting the Light</h3>
+          <p style="color:var(--text-light); font-size:0.92rem; margin-bottom:1.25rem;">A live or online group workshop experience. Deep, collective exploration of the light/shadow metaphor, the Four Realms, and practical group SmallStepz.</p>
+          <p style="color:var(--gold); font-family:var(--font-head); font-size:1.4rem; margin-bottom:1.25rem;">$75 <span style="font-size:0.9rem; color:var(--text-light); font-family:var(--font-body);">/ per person</span></p>
+          <a href="contact.html?offer=group-workshop" class="btn btn-outline" style="width:100%; justify-content:center; border-color:var(--midnight); color:var(--midnight);">Join a Workshop</a>
+        </div>
+
+        <div style="background:var(--white); border-radius:var(--radius-lg); padding:2rem; box-shadow:var(--shadow-sm);" class="reveal" style="transition-delay:0.1s;">
+          <div style="font-size:2.5rem; margin-bottom:1rem;">💑</div>
+          <h3 style="color:var(--midnight); margin-bottom:0.5rem;">Couples Lamed Session</h3>
+          <p style="color:var(--text-light); font-size:0.92rem; margin-bottom:1.25rem;">Identify where each partner is on the Four Realms arc and how your combined shadow patterns interact. Find the Lamed pivot for your relationship together.</p>
+          <p style="color:var(--gold); font-family:var(--font-head); font-size:1.4rem; margin-bottom:1.25rem;">$197 <span style="font-size:0.9rem; color:var(--text-light); font-family:var(--font-body);">/ 90 min session</span></p>
+          <a href="contact.html?offer=couples-lamed" class="btn btn-outline" style="width:100%; justify-content:center; border-color:var(--midnight); color:var(--midnight);">Book a Couples Session</a>
+        </div>
+
+        <div style="background:var(--white); border-radius:var(--radius-lg); padding:2rem; box-shadow:var(--shadow-sm);" class="reveal" style="transition-delay:0.2s;">
+          <div style="font-size:2.5rem; margin-bottom:1rem;">📞</div>
+          <h3 style="color:var(--midnight); margin-bottom:0.5rem;">Free Discovery Call</h3>
+          <p style="color:var(--text-light); font-size:0.92rem; margin-bottom:1.25rem;">Not sure which offer is right for you? Book a free 20-minute discovery call with Crystal to explore where you are and which path makes the most sense for you.</p>
+          <p style="color:var(--gold); font-family:var(--font-head); font-size:1.4rem; margin-bottom:1.25rem;">Free <span style="font-size:0.9rem; color:var(--text-light); font-family:var(--font-body);">/ 20 min call</span></p>
+          <a href="contact.html?offer=discovery" class="btn btn-gold" style="width:100%; justify-content:center;">Book Free Call</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== FAQ ======================== -->
+  <section class="section section--cream">
+    <div class="container" style="max-width:780px;">
+      <div class="text-center">
+        <span class="label reveal">Questions</span>
+        <h2 class="reveal">Frequently Asked</h2>
+        <div class="divider"></div>
+      </div>
+
+      <div style="margin-top:2.5rem; display:flex; flex-direction:column; gap:1.25rem;">
+        <div class="reveal" style="background:var(--white); border-radius:var(--radius); padding:1.75rem; box-shadow:var(--shadow-sm);">
+          <h4 style="color:var(--midnight); margin-bottom:0.5rem;">Do I need to be Christian or religious to work with Crystal?</h4>
+          <p style="color:var(--text-light); font-size:0.93rem; margin:0;">The framework is biblically-rooted but not exclusive. If you are spiritually curious, open to ancient wisdom, and willing to do honest inner work, you are welcome here — regardless of your religious background.</p>
+        </div>
+        <div class="reveal" style="background:var(--white); border-radius:var(--radius); padding:1.75rem; box-shadow:var(--shadow-sm);">
+          <h4 style="color:var(--midnight); margin-bottom:0.5rem;">Is this therapy or counseling?</h4>
+          <p style="color:var(--text-light); font-size:0.93rem; margin:0;">No. SmallStepz2Success is spiritual and emotional wellness coaching — not licensed therapy or clinical counseling. If you are dealing with a mental health crisis, please also seek appropriate clinical support. Coaching and therapy can work beautifully side-by-side.</p>
+        </div>
+        <div class="reveal" style="background:var(--white); border-radius:var(--radius); padding:1.75rem; box-shadow:var(--shadow-sm);">
+          <h4 style="color:var(--midnight); margin-bottom:0.5rem;">How are sessions conducted?</h4>
+          <p style="color:var(--text-light); font-size:0.93rem; margin:0;">All sessions are conducted via Zoom video call. In-person sessions in select locations may be arranged — contact Crystal directly to discuss.</p>
+        </div>
+        <div class="reveal" style="background:var(--white); border-radius:var(--radius); padding:1.75rem; box-shadow:var(--shadow-sm);">
+          <h4 style="color:var(--midnight); margin-bottom:0.5rem;">What if I'm new to this kind of work?</h4>
+          <p style="color:var(--text-light); font-size:0.93rem; margin:0;">The Adam Journey Session is specifically designed as a first step — no prior knowledge of the framework is needed. Crystal will meet you exactly where you are. The free discovery call is also a perfect way to ask questions and get comfortable before committing.</p>
+        </div>
+        <div class="reveal" style="background:var(--white); border-radius:var(--radius); padding:1.75rem; box-shadow:var(--shadow-sm);">
+          <h4 style="color:var(--midnight); margin-bottom:0.5rem;">Can I use or teach Crystal's framework?</h4>
+          <p style="color:var(--text-light); font-size:0.93rem; margin:0;">The Four Realms Framework, Lamed Heart Pivot, DNA of the Heart, and all associated teachings are the <strong>original intellectual property of Crystal C. Bingham</strong>. Teaching, reproducing, or commercially using this material without written permission is not permitted and constitutes spiritual and legal theft.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== CTA ======================== -->
+  <section class="section cta-banner text-center">
+    <div class="container">
+      <h2 class="reveal" style="color:var(--white);">Not Sure Where to Start?</h2>
+      <p class="reveal" style="color:var(--muted); max-width:480px; margin:1rem auto 2rem;">Book a free 20-minute discovery call. We'll find out where you are — and what your first SmallStep looks like.</p>
+      <a href="contact.html?offer=discovery" class="btn btn-gold reveal"><i class="fa-solid fa-calendar-plus"></i> Book Free Discovery Call</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <span class="navbar__logo-main">SmallStepz2Success</span>
+          <span class="navbar__logo-sub" style="display:block; font-size:0.65rem; letter-spacing:0.18em; text-transform:uppercase; color:var(--muted);">Spiritual &amp; Emotional Wellness Coaching</span>
+          <p>Helping you move from Adam's shadow to restored glory — one small, courageous step at a time. Founded by Crystal C. Bingham.</p>
+        </div>
+        <div>
+          <div class="footer__heading">Navigate</div>
+          <ul class="footer__links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Crystal</a></li>
+            <li><a href="framework.html">The Framework</a></li>
+            <li><a href="coaching.html">Work With Me</a></li>
+            <li><a href="blog.html">Resources</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer__heading">Coaching Offers</div>
+          <ul class="footer__links">
+            <li><a href="#offers">Adam Journey Session</a></li>
+            <li><a href="#offers">Lamed Heart Pivot</a></li>
+            <li><a href="#offers">22-Day Heart Light Reset</a></li>
+            <li><a href="#offers">Group Workshop</a></li>
+            <li><a href="contact.html">Free Discovery Call</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2025 SmallStepz2Success · Crystal C. Bingham. All Rights Reserved.</p>
+        <p class="footer__notice">⚠️ All frameworks, concepts, and methods are the original intellectual work of Crystal C. Bingham.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

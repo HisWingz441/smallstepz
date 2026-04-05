@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Framework | SmallStepz2Success — The Four Realms & Lamed Heart Pivot</title>
+  <meta name="description" content="Explore Crystal C. Bingham's original coaching framework: Adam's Four Realms, the Lamed Heart Pivot, the DNA of the Heart, and the Light vs. Shadow model." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="container navbar__inner">
+      <a href="index.html" class="navbar__logo">
+        <span class="navbar__logo-main">SmallStepz2Success</span>
+        <span class="navbar__logo-sub">Spiritual &amp; Emotional Wellness</span>
+      </a>
+      <div class="navbar__links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="framework.html" class="active">The Framework</a>
+        <a href="coaching.html">Work With Me</a>
+        <a href="blog.html">Resources</a>
+        <a href="contact.html" class="btn btn-gold navbar__cta">Book a Session</a>
+      </div>
+      <button class="navbar__hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <div class="navbar__mobile" id="mobileNav">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="framework.html">The Framework</a>
+    <a href="coaching.html">Work With Me</a>
+    <a href="blog.html">Resources</a>
+    <a href="contact.html">Book a Session</a>
+  </div>
+  <div class="mobile-overlay" id="overlay"></div>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="container">
+      <span class="label">Original Method by Crystal C. Bingham</span>
+      <h1>The Framework</h1>
+      <p class="lead">Adam's Emotional Journey · The DNA of the Heart · The Lamed Heart Pivot · Light vs. Shadow</p>
+    </div>
+  </section>
+
+  <!-- ======================== THE ARC ======================== -->
+  <section class="section section--cream">
+    <div class="container">
+      <div class="text-center">
+        <span class="label reveal">The Core Story</span>
+        <h2 class="reveal">Adam as the First Emotional Template</h2>
+        <div class="divider"></div>
+        <p class="section-sub reveal">From the 1611 KJV, the Apocrypha, and the Dead Sea Scrolls, Adam's life reveals a universal emotional pattern — not just a theological event. This arc is <em>your</em> arc too.</p>
+      </div>
+
+      <!-- Arc Overview Banner -->
+      <div class="reveal" style="background:linear-gradient(135deg,var(--midnight),var(--deep-navy)); border-radius:var(--radius-lg); padding:2rem; margin:3rem 0; display:flex; flex-wrap:wrap; align-items:center; justify-content:center; gap:0.5rem; text-align:center;">
+        <div style="padding:0.5rem 1.5rem; color:var(--white); font-family:var(--font-head); font-size:1.1rem;">☀️ Light</div>
+        <i class="fa-solid fa-arrow-right" style="color:var(--gold); font-size:1.2rem;"></i>
+        <div style="padding:0.5rem 1.5rem; color:var(--white); font-family:var(--font-head); font-size:1.1rem;">🌅 The Turn</div>
+        <i class="fa-solid fa-arrow-right" style="color:var(--gold); font-size:1.2rem;"></i>
+        <div style="padding:0.5rem 1.5rem; color:var(--white); font-family:var(--font-head); font-size:1.1rem;">🌑 Shadow</div>
+        <i class="fa-solid fa-arrow-right" style="color:var(--gold); font-size:1.2rem;"></i>
+        <div style="padding:0.5rem 1.5rem; color:var(--white); font-family:var(--font-head); font-size:1.1rem;">🌄 Restored Glory</div>
+      </div>
+
+      <!-- Arc Timeline -->
+      <div class="arc-timeline">
+
+        <!-- Realm 1 -->
+        <div class="arc-item reveal">
+          <div class="arc-icon arc-icon--light">☀️</div>
+          <div class="arc-body">
+            <div class="realm-badge realm-badge--light" style="margin-bottom:0.5rem;">Realm 1</div>
+            <h3>Original Light — Glory &amp; Belonging</h3>
+            <p>Before the fall, Adam lives in <strong>glory</strong>, peace, and deep connection. The Dead Sea Scrolls describe his original state as radiant and honored — living in full communion with God.</p>
+            <blockquote>"This is now bone of my bones, and flesh of my flesh." — Genesis 2:23 (KJV)</blockquote>
+            <p>Emotionally: open-hearted, safe, free from shame, reflecting God's image perfectly. This is the <strong>goal state</strong> — and it is recoverable.</p>
+            <div style="background:rgba(249,212,35,0.07); border-radius:var(--radius); padding:1rem 1.25rem; margin-top:0.75rem; border:1px solid rgba(249,212,35,0.2);">
+              <strong style="font-size:0.88rem; color:#856d00; display:block; margin-bottom:0.3rem;">Coaching Language:</strong>
+              <span style="font-size:0.88rem; color:var(--text-light);">"Your original design." · "Image of God." · "Your true self before the shadow formed."</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Realm 2 -->
+        <div class="arc-item reveal">
+          <div class="arc-icon arc-icon--turn">🌅</div>
+          <div class="arc-body">
+            <div class="realm-badge realm-badge--turn" style="margin-bottom:0.5rem;">Realm 2</div>
+            <h3>The Turn — When You Block the Light</h3>
+            <p>The moment fear, shame, and blame enter. Adam's back turns toward God — and a shadow forms in front of him. This is not just a theological event; it is the <em>first recorded human psychological wound.</em></p>
+            <blockquote>"I was afraid, because I was naked; and I hid myself." — Genesis 3:10 (KJV)</blockquote>
+            <ul style="list-style:none; margin:0.75rem 0; display:flex; flex-direction:column; gap:0.5rem;">
+              <li style="display:flex; gap:0.6rem; align-items:flex-start; font-size:0.92rem; color:var(--text-light);"><i class="fa-solid fa-triangle-exclamation" style="color:#f97316; margin-top:4px;"></i><span><strong>First fear:</strong> "I was afraid" — the birth of anxiety and self-protection.</span></li>
+              <li style="display:flex; gap:0.6rem; align-items:flex-start; font-size:0.92rem; color:var(--text-light);"><i class="fa-solid fa-triangle-exclamation" style="color:#f97316; margin-top:4px;"></i><span><strong>Shame:</strong> "I was naked" — self-consciousness, inadequacy, the feeling of being exposed.</span></li>
+              <li style="display:flex; gap:0.6rem; align-items:flex-start; font-size:0.92rem; color:var(--text-light);"><i class="fa-solid fa-triangle-exclamation" style="color:#f97316; margin-top:4px;"></i><span><strong>Blame:</strong> Genesis 3:12 — "The woman whom thou gavest me" — the first act of blame-shifting, blaming Eve and indirectly God himself.</span></li>
+            </ul>
+            <div style="background:rgba(249,115,22,0.06); border-radius:var(--radius); padding:1rem 1.25rem; margin-top:0.75rem; border:1px solid rgba(249,115,22,0.2);">
+              <strong style="font-size:0.88rem; color:#b45309; display:block; margin-bottom:0.3rem;">Coaching Work:</strong>
+              <span style="font-size:0.88rem; color:var(--text-light);">Helping clients see their own "Turn" moments — when they first moved from openness into fear, shame, or blame. These are your Lamed turning-point events.</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Realm 3 -->
+        <div class="arc-item reveal">
+          <div class="arc-icon arc-icon--shadow">🌑</div>
+          <div class="arc-body">
+            <div class="realm-badge realm-badge--shadow" style="margin-bottom:0.5rem;">Realm 3</div>
+            <h3>The Shadow — Spiritual Death &amp; Contained Sorrows</h3>
+            <p>Living with your back to the light. In the shadow, there is no self-reflection — and without reflection, there is no genuine growth. This is what Crystal calls <strong>"living like a spiritual vampire."</strong></p>
+            <blockquote>"Thou art not fallen alone, but we all that come of thee." — 2 Esdras 7:48</blockquote>
+            <p>The shadow is both personal and generational. What Adam passed down wasn't just "original sin" — it was an <em>emotional and behavioral template</em>:</p>
+            <div class="realm-grid" style="grid-template-columns: repeat(auto-fit, minmax(200px,1fr)); margin:1rem 0;">
+              <div style="background:rgba(75,63,114,0.1); border-radius:var(--radius); padding:0.85rem 1rem; border:1px solid rgba(75,63,114,0.2);">
+                <strong style="font-size:0.85rem; color:#4b3f72;">Narcissistic Patterns</strong>
+                <p style="font-size:0.82rem; color:var(--text-light); margin:0.3rem 0 0;">Constant self-protection, inability to receive correction, blame-shifting</p>
+              </div>
+              <div style="background:rgba(75,63,114,0.1); border-radius:var(--radius); padding:0.85rem 1rem; border:1px solid rgba(75,63,114,0.2);">
+                <strong style="font-size:0.85rem; color:#4b3f72;">Chaos Energy</strong>
+                <p style="font-size:0.82rem; color:var(--text-light); margin:0.3rem 0 0;">Reactive, unpredictable, emotionally volatile patterns</p>
+              </div>
+              <div style="background:rgba(75,63,114,0.1); border-radius:var(--radius); padding:0.85rem 1rem; border:1px solid rgba(75,63,114,0.2);">
+                <strong style="font-size:0.85rem; color:#4b3f72;">Generational Scripts</strong>
+                <p style="font-size:0.82rem; color:var(--text-light); margin:0.3rem 0 0;">"Son of Kush" patterns — inherited trauma and fear passed through family lines</p>
+              </div>
+              <div style="background:rgba(75,63,114,0.1); border-radius:var(--radius); padding:0.85rem 1rem; border:1px solid rgba(75,63,114,0.2);">
+                <strong style="font-size:0.85rem; color:#4b3f72;">Serpent/Separation Energy</strong>
+                <p style="font-size:0.82rem; color:var(--text-light); margin:0.3rem 0 0;">Disconnection from God, self, and others — the fruit of living in shadow</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Realm 4 -->
+        <div class="arc-item reveal">
+          <div class="arc-icon arc-icon--return">🌄</div>
+          <div class="arc-body">
+            <div class="realm-badge realm-badge--return" style="margin-bottom:0.5rem;">Realm 4</div>
+            <h3>Restored Glory — Return to Light</h3>
+            <p>The ancient promise: restoration is possible. Adam's original glory is not gone — it is <em>recoverable</em>. The Dead Sea Scrolls (1QS 4:5) describe the righteous inheriting "all the glory of Adam."</p>
+            <blockquote>"And the children of righteousness shall walk… and they shall inherit all the glory of Adam." — Dead Sea Scrolls, 1QS 4:5</blockquote>
+            <p>Restored glory looks like:</p>
+            <ul style="list-style:none; margin:0.75rem 0; display:flex; flex-direction:column; gap:0.5rem;">
+              <li style="display:flex; gap:0.6rem; align-items:flex-start; font-size:0.92rem; color:var(--text-light);"><i class="fa-solid fa-check-circle" style="color:var(--gold); margin-top:4px;"></i><span>Honest self-reflection — seeing yourself clearly without the distortion of shame or blame</span></li>
+              <li style="display:flex; gap:0.6rem; align-items:flex-start; font-size:0.92rem; color:var(--text-light);"><i class="fa-solid fa-check-circle" style="color:var(--gold); margin-top:4px;"></i><span>Vulnerability — being willing to be seen, known, and loved in your actual state</span></li>
+              <li style="display:flex; gap:0.6rem; align-items:flex-start; font-size:0.92rem; color:var(--text-light);"><i class="fa-solid fa-check-circle" style="color:var(--gold); margin-top:4px;"></i><span>Alignment with truth — living from your original design instead of your survival strategies</span></li>
+              <li style="display:flex; gap:0.6rem; align-items:flex-start; font-size:0.92rem; color:var(--text-light);"><i class="fa-solid fa-check-circle" style="color:var(--gold); margin-top:4px;"></i><span>Growing up spiritually — not just surviving, but truly maturing in God's image</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== LAMED DEEP DIVE ======================== -->
+  <section class="section section--dark">
+    <div class="container">
+      <div class="lamed-wrap">
+        <div class="lamed-visual reveal">
+          <div class="lamed-circle">
+            <div class="lamed-label lamed-label--top">Spirit · Awe · Restored Glory</div>
+            <span class="lamed-letter">ל</span>
+            <div class="lamed-label lamed-label--bottom">Survival · Fear · Shadow</div>
+          </div>
+        </div>
+        <div class="reveal" style="transition-delay:0.15s;">
+          <span class="label">Your Signature Concept</span>
+          <h2>The Lamed Heart Pivot &amp; DNA of the Heart</h2>
+          <div class="divider" style="margin-left:0;"></div>
+
+          <p>The Hebrew alphabet has <strong style="color:var(--gold-light);">22 letters</strong>. The human body has <strong style="color:var(--gold-light);">22 autosomes</strong> (non-sex chromosomes). This is the <strong style="color:var(--gold-light);">DNA of the Heart</strong> — the spiritual and emotional architecture encoded in both scripture and biology.</p>
+
+          <div style="display:flex; flex-direction:column; gap:1rem; margin:1.5rem 0;">
+            <div style="background:rgba(75,63,114,0.25); border-radius:var(--radius); padding:1rem 1.25rem; border:1px solid rgba(75,63,114,0.4);">
+              <strong style="color:#b8aee0; font-size:0.88rem; letter-spacing:0.05em;">LETTERS 1–11 · Autosomes 1–11</strong>
+              <p style="color:var(--muted); font-size:0.88rem; margin:0.3rem 0 0;">Lower realm: survival, instinct, shame, trauma, fear, narcissism, chaos. The shadow patterns of Adam's fall.</p>
+            </div>
+            <div style="background:var(--gold-glow); border-radius:var(--radius); padding:1rem 1.25rem; border:2px solid rgba(201,168,76,0.5); position:relative;">
+              <div style="position:absolute; top:-10px; right:16px; background:var(--gold); color:var(--midnight); font-size:0.68rem; font-weight:700; letter-spacing:0.12em; text-transform:uppercase; padding:0.2rem 0.7rem; border-radius:12px;">The Pivot</div>
+              <strong style="color:var(--gold-light); font-size:0.88rem; letter-spacing:0.05em;">LETTER 12 — LAMED (ל) · Autosome 12</strong>
+              <p style="color:var(--cream); font-size:0.88rem; margin:0.3rem 0 0;">The tallest Hebrew letter. The <strong>heart bridge</strong>. The decision point: stay in Adam's shadow or turn back toward light. This is where all coaching pivots.</p>
+            </div>
+            <div style="background:rgba(201,168,76,0.08); border-radius:var(--radius); padding:1rem 1.25rem; border:1px solid rgba(201,168,76,0.2);">
+              <strong style="color:var(--gold-light); font-size:0.88rem; letter-spacing:0.05em;">LETTERS 13–22 · Autosomes 13–22</strong>
+              <p style="color:var(--muted); font-size:0.88rem; margin:0.3rem 0 0;">Upper realm: spirit, wisdom, creativity, discernment, awe, communion, restored glory. The promise of 1QS 4:5.</p>
+            </div>
+          </div>
+
+          <h4 style="color:var(--gold-light); margin-top:1.5rem; margin-bottom:0.75rem;">The Coaching Question</h4>
+          <blockquote style="font-size:1rem;">"Right now, is your Lamed turning away from the light — or turning back toward it? What would it look like to move it one degree?"</blockquote>
+
+          <p style="color:var(--muted); font-size:0.9rem; margin-top:1.25rem;">This is the question Crystal brings to every coaching moment. Not overwhelming transformation — just one degree of turn at the pivot point of your heart.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== VAMPIRE / LIGHT METAPHOR ======================== -->
+  <section class="section section--cream-dark">
+    <div class="container">
+      <div class="text-center">
+        <span class="label reveal">The Central Metaphor</span>
+        <h2 class="reveal">The Spiritual Vampire vs. The Reflective Soul</h2>
+        <div class="divider"></div>
+        <p class="section-sub reveal">One of Crystal's most powerful original insights: what happens when you live with your back to the light.</p>
+      </div>
+
+      <div style="display:grid; grid-template-columns: 1fr 1fr; gap:2rem; margin-top:3rem;" class="reveal">
+        <!-- Vampire Side -->
+        <div style="background:linear-gradient(160deg,#1b1a2e,#2d2354); border-radius:var(--radius-lg); padding:2.5rem 2rem; border:1px solid rgba(75,63,114,0.5);">
+          <div style="font-size:2.5rem; margin-bottom:1rem;">🧛</div>
+          <h3 style="color:#b8aee0; margin-bottom:1rem;">The Spiritual Vampire</h3>
+          <p style="color:var(--muted); font-size:0.93rem; margin-bottom:1rem;">When you turn your back on the light, a shadow forms in front of you. A vampire cannot see its own reflection — it cannot truly grow up. It only survives. It consumes without maturing.</p>
+          <ul style="list-style:none; display:flex; flex-direction:column; gap:0.65rem;">
+            <li style="display:flex; gap:0.6rem; font-size:0.88rem; color:var(--muted);"><i class="fa-solid fa-xmark" style="color:#c084fc; margin-top:4px;"></i> No honest self-reflection</li>
+            <li style="display:flex; gap:0.6rem; font-size:0.88rem; color:var(--muted);"><i class="fa-solid fa-xmark" style="color:#c084fc; margin-top:4px;"></i> No genuine spiritual growth</li>
+            <li style="display:flex; gap:0.6rem; font-size:0.88rem; color:var(--muted);"><i class="fa-solid fa-xmark" style="color:#c084fc; margin-top:4px;"></i> Fear-driven, blame-driven behavior</li>
+            <li style="display:flex; gap:0.6rem; font-size:0.88rem; color:var(--muted);"><i class="fa-solid fa-xmark" style="color:#c084fc; margin-top:4px;"></i> "Spiritual death and contained sorrows"</li>
+            <li style="display:flex; gap:0.6rem; font-size:0.88rem; color:var(--muted);"><i class="fa-solid fa-xmark" style="color:#c084fc; margin-top:4px;"></i> Generational patterns repeat, unchallenged</li>
+          </ul>
+        </div>
+        <!-- Reflective Soul -->
+        <div style="background:linear-gradient(160deg,#0d1b2a,#1e3a5f); border-radius:var(--radius-lg); padding:2.5rem 2rem; border:1px solid rgba(201,168,76,0.35);">
+          <div style="font-size:2.5rem; margin-bottom:1rem;">✨</div>
+          <h3 style="color:var(--gold-light); margin-bottom:1rem;">The Reflective Soul</h3>
+          <p style="color:var(--muted); font-size:0.93rem; margin-bottom:1rem;">When you turn back toward the light, you can see yourself clearly again. You reflect God's image. You grow up — spiritually, emotionally, relationally. This is Adam's restored glory in real life.</p>
+          <ul style="list-style:none; display:flex; flex-direction:column; gap:0.65rem;">
+            <li style="display:flex; gap:0.6rem; font-size:0.88rem; color:var(--cream);"><i class="fa-solid fa-check" style="color:var(--gold); margin-top:4px;"></i> Honest self-reflection — seeing clearly</li>
+            <li style="display:flex; gap:0.6rem; font-size:0.88rem; color:var(--cream);"><i class="fa-solid fa-check" style="color:var(--gold); margin-top:4px;"></i> Genuine spiritual and emotional growth</li>
+            <li style="display:flex; gap:0.6rem; font-size:0.88rem; color:var(--cream);"><i class="fa-solid fa-check" style="color:var(--gold); margin-top:4px;"></i> Truth-aligned, love-driven responses</li>
+            <li style="display:flex; gap:0.6rem; font-size:0.88rem; color:var(--cream);"><i class="fa-solid fa-check" style="color:var(--gold); margin-top:4px;"></i> Spiritual aliveness, expanding wholeness</li>
+            <li style="display:flex; gap:0.6rem; font-size:0.88rem; color:var(--cream);"><i class="fa-solid fa-check" style="color:var(--gold); margin-top:4px;"></i> Breaking generational patterns — one SmallStep at a time</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="text-center reveal" style="margin-top:3rem;">
+        <p style="font-family:var(--font-quote); font-size:1.3rem; font-style:italic; color:var(--navy); max-width:680px; margin:0 auto 2rem;">"God said, 'Let there be light.' When you turn your back on that light, the shadow in you grows. The question is not whether the light is there — it always is. The question is: which direction is your heart facing?"<br>— Crystal C. Bingham</p>
+        <a href="contact.html" class="btn btn-gold">Begin Turning Back →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== CTA ======================== -->
+  <section class="section cta-banner text-center">
+    <div class="container">
+      <h2 class="reveal" style="color:var(--white);">Ready to Apply This Framework to Your Life?</h2>
+      <p class="reveal" style="color:var(--muted); max-width:500px; margin:1rem auto 2rem;">In a coaching session with Crystal, you'll map your own Four Realms journey, find your Lamed pivot, and take your first intentional SmallStep toward restored light.</p>
+      <div class="reveal" style="display:flex; flex-wrap:wrap; gap:1rem; justify-content:center;">
+        <a href="coaching.html" class="btn btn-gold"><i class="fa-solid fa-sun"></i> See Coaching Offers</a>
+        <a href="contact.html" class="btn btn-outline-white">Book a Discovery Call</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <span class="navbar__logo-main">SmallStepz2Success</span>
+          <span class="navbar__logo-sub" style="display:block; font-size:0.65rem; letter-spacing:0.18em; text-transform:uppercase; color:var(--muted);">Spiritual &amp; Emotional Wellness Coaching</span>
+          <p>Helping you move from Adam's shadow to restored glory — one small, courageous step at a time. Founded by Crystal C. Bingham.</p>
+        </div>
+        <div>
+          <div class="footer__heading">Navigate</div>
+          <ul class="footer__links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Crystal</a></li>
+            <li><a href="framework.html">The Framework</a></li>
+            <li><a href="coaching.html">Work With Me</a></li>
+            <li><a href="blog.html">Resources</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer__heading">The Method</div>
+          <ul class="footer__links">
+            <li><a href="framework.html">Four Realms</a></li>
+            <li><a href="framework.html">Lamed Heart Pivot</a></li>
+            <li><a href="framework.html">DNA of the Heart</a></li>
+            <li><a href="framework.html">Light vs. Shadow</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2025 SmallStepz2Success · Crystal C. Bingham. All Rights Reserved.</p>
+        <p class="footer__notice">⚠️ All frameworks, concepts, and methods are the original intellectual work of Crystal C. Bingham. Unauthorized use constitutes spiritual and legal theft.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

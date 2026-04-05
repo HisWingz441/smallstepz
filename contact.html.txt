@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact & Book a Session | SmallStepz2Success</title>
+  <meta name="description" content="Book a coaching session or free discovery call with Crystal C. Bingham — SmallStepz2Success spiritual and emotional wellness coaching." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="container navbar__inner">
+      <a href="index.html" class="navbar__logo">
+        <span class="navbar__logo-main">SmallStepz2Success</span>
+        <span class="navbar__logo-sub">Spiritual &amp; Emotional Wellness</span>
+      </a>
+      <div class="navbar__links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="framework.html">The Framework</a>
+        <a href="coaching.html">Work With Me</a>
+        <a href="blog.html">Resources</a>
+        <a href="contact.html" class="btn btn-gold navbar__cta active">Book a Session</a>
+      </div>
+      <button class="navbar__hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <div class="navbar__mobile" id="mobileNav">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="framework.html">The Framework</a>
+    <a href="coaching.html">Work With Me</a>
+    <a href="blog.html">Resources</a>
+    <a href="contact.html">Book a Session</a>
+  </div>
+  <div class="mobile-overlay" id="overlay"></div>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="container">
+      <span class="label">Your First SmallStep</span>
+      <h1>Let's Connect</h1>
+      <p class="lead">Send a message, book a session, or schedule your free discovery call. Crystal responds within 48 hours.</p>
+    </div>
+  </section>
+
+  <!-- ======================== CONTACT SECTION ======================== -->
+  <section class="section section--cream">
+    <div class="container">
+      <div style="display:grid; grid-template-columns:1fr 1.6fr; gap:4rem; align-items:start;">
+
+        <!-- Left: Info + Offers -->
+        <div>
+          <span class="label reveal">Quick Select</span>
+          <h3 class="reveal" style="margin-bottom:1.5rem;">What Would You Like to Book?</h3>
+
+          <div style="display:flex; flex-direction:column; gap:1rem; margin-bottom:2.5rem;" id="offer-selector">
+            <div class="offer-choice reveal" data-value="discovery" style="background:var(--white); border-radius:var(--radius); padding:1.25rem 1.5rem; box-shadow:var(--shadow-sm); cursor:pointer; border:2px solid transparent; transition:border-color var(--transition);">
+              <div style="display:flex; align-items:center; gap:0.75rem;">
+                <span style="font-size:1.5rem;">📞</span>
+                <div>
+                  <strong style="font-size:0.95rem; color:var(--midnight);">Free Discovery Call</strong>
+                  <div style="font-size:0.8rem; color:var(--muted);">20 min · Free</div>
+                </div>
+                <span style="margin-left:auto; color:var(--gold); font-weight:700; font-family:var(--font-head);">Free</span>
+              </div>
+            </div>
+            <div class="offer-choice reveal" data-value="adam-journey" style="background:var(--white); border-radius:var(--radius); padding:1.25rem 1.5rem; box-shadow:var(--shadow-sm); cursor:pointer; border:2px solid transparent; transition:border-color var(--transition);">
+              <div style="display:flex; align-items:center; gap:0.75rem;">
+                <span style="font-size:1.5rem;">🗺️</span>
+                <div>
+                  <strong style="font-size:0.95rem; color:var(--midnight);">Adam Journey Session</strong>
+                  <div style="font-size:0.8rem; color:var(--muted);">60 min · 1:1 Coaching</div>
+                </div>
+                <span style="margin-left:auto; color:var(--gold); font-weight:700; font-family:var(--font-head);">$97</span>
+              </div>
+            </div>
+            <div class="offer-choice reveal" data-value="lamed-pivot" style="background:var(--white); border-radius:var(--radius); padding:1.25rem 1.5rem; box-shadow:var(--shadow-sm); cursor:pointer; border:2px solid rgba(201,168,76,0.4); transition:border-color var(--transition);">
+              <div style="display:flex; align-items:center; gap:0.75rem;">
+                <span style="font-size:1.5rem;">❤️</span>
+                <div>
+                  <strong style="font-size:0.95rem; color:var(--midnight);">Lamed Heart Pivot Session</strong>
+                  <div style="font-size:0.8rem; color:var(--muted);">90 min · 1:1 Coaching</div>
+                </div>
+                <span style="margin-left:auto; color:var(--gold); font-weight:700; font-family:var(--font-head);">$147</span>
+              </div>
+            </div>
+            <div class="offer-choice reveal" data-value="22-day-reset" style="background:var(--white); border-radius:var(--radius); padding:1.25rem 1.5rem; box-shadow:var(--shadow-sm); cursor:pointer; border:2px solid transparent; transition:border-color var(--transition);">
+              <div style="display:flex; align-items:center; gap:0.75rem;">
+                <span style="font-size:1.5rem;">🌟</span>
+                <div>
+                  <strong style="font-size:0.95rem; color:var(--midnight);">22-Day Heart Light Reset</strong>
+                  <div style="font-size:0.8rem; color:var(--muted);">22-day program</div>
+                </div>
+                <span style="margin-left:auto; color:var(--gold); font-weight:700; font-family:var(--font-head);">$444</span>
+              </div>
+            </div>
+            <div class="offer-choice reveal" data-value="group-workshop" style="background:var(--white); border-radius:var(--radius); padding:1.25rem 1.5rem; box-shadow:var(--shadow-sm); cursor:pointer; border:2px solid transparent; transition:border-color var(--transition);">
+              <div style="display:flex; align-items:center; gap:0.75rem;">
+                <span style="font-size:1.5rem;">👥</span>
+                <div>
+                  <strong style="font-size:0.95rem; color:var(--midnight);">Group Workshop / Other</strong>
+                  <div style="font-size:0.8rem; color:var(--muted);">Inquiry</div>
+                </div>
+                <span style="margin-left:auto; color:var(--muted); font-size:0.8rem;">Varies</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- What to Expect -->
+          <div class="reveal" style="background:linear-gradient(160deg,var(--midnight),var(--deep-navy)); border-radius:var(--radius-lg); padding:1.75rem; border:1px solid rgba(201,168,76,0.2);">
+            <h4 style="color:var(--gold-light); margin-bottom:1rem; font-size:1rem;">What Happens Next</h4>
+            <div style="display:flex; flex-direction:column; gap:0.85rem;">
+              <div style="display:flex; gap:0.75rem; font-size:0.88rem; color:var(--cream);">
+                <span style="background:var(--gold); color:var(--midnight); border-radius:50%; width:22px; height:22px; display:flex; align-items:center; justify-content:center; font-size:0.75rem; font-weight:700; flex-shrink:0;">1</span>
+                <span>Crystal reviews your message within 48 hours</span>
+              </div>
+              <div style="display:flex; gap:0.75rem; font-size:0.88rem; color:var(--cream);">
+                <span style="background:var(--gold); color:var(--midnight); border-radius:50%; width:22px; height:22px; display:flex; align-items:center; justify-content:center; font-size:0.75rem; font-weight:700; flex-shrink:0;">2</span>
+                <span>You receive a booking link or calendar invitation</span>
+              </div>
+              <div style="display:flex; gap:0.75rem; font-size:0.88rem; color:var(--cream);">
+                <span style="background:var(--gold); color:var(--midnight); border-radius:50%; width:22px; height:22px; display:flex; align-items:center; justify-content:center; font-size:0.75rem; font-weight:700; flex-shrink:0;">3</span>
+                <span>Payment (if applicable) is processed before your session</span>
+              </div>
+              <div style="display:flex; gap:0.75rem; font-size:0.88rem; color:var(--cream);">
+                <span style="background:var(--gold); color:var(--midnight); border-radius:50%; width:22px; height:22px; display:flex; align-items:center; justify-content:center; font-size:0.75rem; font-weight:700; flex-shrink:0;">4</span>
+                <span>Your session happens via Zoom — sacred space, full attention</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Contact Form -->
+        <div>
+          <span class="label reveal">Send a Message</span>
+          <div class="contact-form reveal">
+            <div id="form-success" style="display:none; background:rgba(201,168,76,0.1); border:1px solid rgba(201,168,76,0.4); border-radius:var(--radius); padding:1.25rem; margin-bottom:1.5rem; color:var(--midnight); font-size:0.95rem; line-height:1.6;"></div>
+
+            <form id="contactForm">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="name">Your Name *</label>
+                  <input type="text" id="name" name="name" placeholder="First &amp; Last Name" required />
+                </div>
+                <div class="form-group">
+                  <label for="email">Email Address *</label>
+                  <input type="email" id="email" name="email" placeholder="you@example.com" required />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="session">Session / Offer Interest *</label>
+                <select id="session" name="session" required>
+                  <option value="">— Select what you're interested in —</option>
+                  <option value="discovery">Free Discovery Call (20 min)</option>
+                  <option value="adam-journey">Adam Journey Session ($97 / 60 min)</option>
+                  <option value="lamed-pivot">Lamed Heart Pivot Session ($147 / 90 min)</option>
+                  <option value="22-day-reset">22-Day Heart Light Reset ($444)</option>
+                  <option value="group-workshop">Group Workshop Inquiry</option>
+                  <option value="couples-lamed">Couples Lamed Session ($197)</option>
+                  <option value="other">Other / General Question</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="realm">Where Are You on the Journey? (Optional)</label>
+                <select id="realm" name="realm">
+                  <option value="">— Select your current realm (optional) —</option>
+                  <option value="light">☀️ In the Light — I want to deepen and protect it</option>
+                  <option value="turn">🌅 At a Turning Point — something just shifted</option>
+                  <option value="shadow">🌑 In the Shadow — I know something needs to change</option>
+                  <option value="return">🌄 On the Return — I've started but need support</option>
+                  <option value="unsure">I'm not sure yet</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Your Message *</label>
+                <textarea id="message" name="message" placeholder="Tell Crystal a bit about where you are and what you're looking for. No pressure — just share what feels right." required></textarea>
+              </div>
+
+              <div class="form-group">
+                <label style="display:flex; align-items:flex-start; gap:0.75rem; cursor:pointer; font-weight:400;">
+                  <input type="checkbox" name="newsletter" style="margin-top:3px; width:auto; accent-color:var(--gold);" />
+                  <span style="font-size:0.88rem; color:var(--text-light);">Yes, I'd like to receive Crystal's SmallStepz newsletter — articles, insights, and resources for the journey. (No spam, unsubscribe anytime.)</span>
+                </label>
+              </div>
+
+              <button type="submit" class="btn btn-gold" style="width:100%; justify-content:center; font-size:1rem; padding:1rem;">
+                <i class="fa-solid fa-paper-plane"></i> Send Message &amp; Request Session
+              </button>
+
+              <p style="text-align:center; font-size:0.78rem; color:var(--muted); margin-top:1rem; margin-bottom:0;">
+                <i class="fa-solid fa-lock" style="color:var(--gold);"></i>
+                Your information is sacred and will never be shared. Crystal responds within 48 hours.
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== PROMISE ======================== -->
+  <section class="section section--dark text-center">
+    <div class="container" style="max-width:700px;">
+      <span class="label reveal">Crystal's Promise</span>
+      <h2 class="reveal" style="color:var(--white);">What You Can Expect from Every Session</h2>
+      <div class="divider"></div>
+      <p class="reveal" style="color:var(--muted); font-size:1.05rem; max-width:600px; margin:0 auto 2.5rem;">Crystal doesn't coach from a script — she coaches from the ancient texts, from her own journey, and from her original framework. Every session is:</p>
+
+      <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:1.5rem; text-align:left;" class="reveal">
+        <div style="background:rgba(255,255,255,0.04); border-radius:var(--radius); padding:1.5rem; border:1px solid rgba(201,168,76,0.15);">
+          <i class="fa-solid fa-shield-heart" style="font-size:1.6rem; color:var(--gold); margin-bottom:0.75rem; display:block;"></i>
+          <strong style="color:var(--gold-light); display:block; margin-bottom:0.4rem;">Safe</strong>
+          <p style="color:var(--muted); font-size:0.88rem; margin:0;">A sacred, judgment-free space for honest exploration.</p>
+        </div>
+        <div style="background:rgba(255,255,255,0.04); border-radius:var(--radius); padding:1.5rem; border:1px solid rgba(201,168,76,0.15);">
+          <i class="fa-solid fa-eye" style="font-size:1.6rem; color:var(--gold); margin-bottom:0.75rem; display:block;"></i>
+          <strong style="color:var(--gold-light); display:block; margin-bottom:0.4rem;">Clear</strong>
+          <p style="color:var(--muted); font-size:0.88rem; margin:0;">Crystal will show you what she sees — with love and without flattery.</p>
+        </div>
+        <div style="background:rgba(255,255,255,0.04); border-radius:var(--radius); padding:1.5rem; border:1px solid rgba(201,168,76,0.15);">
+          <i class="fa-solid fa-shoe-prints" style="font-size:1.6rem; color:var(--gold); margin-bottom:0.75rem; display:block;"></i>
+          <strong style="color:var(--gold-light); display:block; margin-bottom:0.4rem;">Practical</strong>
+          <p style="color:var(--muted); font-size:0.88rem; margin:0;">You leave every session with at least one concrete SmallStep.</p>
+        </div>
+        <div style="background:rgba(255,255,255,0.04); border-radius:var(--radius); padding:1.5rem; border:1px solid rgba(201,168,76,0.15);">
+          <i class="fa-solid fa-scroll" style="font-size:1.6rem; color:var(--gold); margin-bottom:0.75rem; display:block;"></i>
+          <strong style="color:var(--gold-light); display:block; margin-bottom:0.4rem;">Rooted</strong>
+          <p style="color:var(--muted); font-size:0.88rem; margin:0;">Ancient wisdom from primary texts, translated into your daily life.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section cta-banner text-center">
+    <div class="container">
+      <h2 class="reveal" style="color:var(--white);">Not Ready for a Session Yet?</h2>
+      <p class="reveal" style="color:var(--muted); max-width:460px; margin:1rem auto 2rem;">Start with a free article, take the realm quiz on the home page, or just sit with the question: <em>"Which direction is my Lamed facing today?"</em></p>
+      <div class="reveal" style="display:flex; flex-wrap:wrap; gap:1rem; justify-content:center;">
+        <a href="blog.html" class="btn btn-outline-white"><i class="fa-regular fa-book-open-reader"></i> Read Free Articles</a>
+        <a href="framework.html" class="btn btn-gold">Explore the Framework</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <span class="navbar__logo-main">SmallStepz2Success</span>
+          <span class="navbar__logo-sub" style="display:block; font-size:0.65rem; letter-spacing:0.18em; text-transform:uppercase; color:var(--muted);">Spiritual &amp; Emotional Wellness Coaching</span>
+          <p>Helping you move from Adam's shadow to restored glory — one small, courageous step at a time. Founded by Crystal C. Bingham.</p>
+        </div>
+        <div>
+          <div class="footer__heading">Navigate</div>
+          <ul class="footer__links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Crystal</a></li>
+            <li><a href="framework.html">The Framework</a></li>
+            <li><a href="coaching.html">Work With Me</a></li>
+            <li><a href="blog.html">Resources</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer__heading">Quick Book</div>
+          <ul class="footer__links">
+            <li><a href="contact.html?offer=discovery">Free Discovery Call</a></li>
+            <li><a href="contact.html?offer=adam-journey">Adam Journey Session</a></li>
+            <li><a href="contact.html?offer=lamed-pivot">Lamed Heart Pivot</a></li>
+            <li><a href="contact.html?offer=22-day-reset">22-Day Reset</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2025 SmallStepz2Success · Crystal C. Bingham. All Rights Reserved.</p>
+        <p class="footer__notice">⚠️ All frameworks, concepts, and methods are the original intellectual work of Crystal C. Bingham.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    // Offer card selector
+    const offerChoices = document.querySelectorAll('.offer-choice');
+    const sessionSelect = document.getElementById('session');
+
+    offerChoices.forEach(choice => {
+      choice.addEventListener('click', function() {
+        offerChoices.forEach(c => c.style.borderColor = 'transparent');
+        this.style.borderColor = 'rgba(201,168,76,0.7)';
+        if (sessionSelect) sessionSelect.value = this.dataset.value;
+      });
+    });
+
+    // Pre-select from URL param
+    const params = new URLSearchParams(window.location.search);
+    const offerParam = params.get('offer');
+    if (offerParam) {
+      if (sessionSelect) sessionSelect.value = offerParam;
+      offerChoices.forEach(c => {
+        c.style.borderColor = 'transparent';
+        if (c.dataset.value === offerParam) c.style.borderColor = 'rgba(201,168,76,0.7)';
+      });
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SmallStepz2Success | From Shadow to Glory — Spiritual & Emotional Wellness Coaching</title>
+  <meta name="description" content="SmallStepz2Success helps you move from Adam's shadow to restored glory — one small step at a time — by turning your heart back toward the light. Founded by Crystal C. Bingham." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet" />
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.0/css/all.min.css" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ======================== NAVBAR ======================== -->
+  <nav class="navbar">
+    <div class="container navbar__inner">
+      <a href="index.html" class="navbar__logo">
+        <span class="navbar__logo-main">SmallStepz2Success</span>
+        <span class="navbar__logo-sub">Spiritual &amp; Emotional Wellness</span>
+      </a>
+      <div class="navbar__links">
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="framework.html">The Framework</a>
+        <a href="coaching.html">Work With Me</a>
+        <a href="blog.html">Resources</a>
+        <a href="contact.html" class="btn btn-gold navbar__cta">Book a Session</a>
+      </div>
+      <button class="navbar__hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Nav -->
+  <div class="navbar__mobile" id="mobileNav">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="framework.html">The Framework</a>
+    <a href="coaching.html">Work With Me</a>
+    <a href="blog.html">Resources</a>
+    <a href="contact.html">Book a Session</a>
+  </div>
+  <div class="mobile-overlay" id="overlay"></div>
+
+  <!-- ======================== HERO ======================== -->
+  <section class="hero">
+    <div class="hero__bg"></div>
+    <div class="glow-orb glow-orb--1"></div>
+    <div class="glow-orb glow-orb--2"></div>
+    <div class="hero__stars"></div>
+
+    <div class="container">
+      <div class="hero__content">
+        <div class="hero__eyebrow">SmallStepz2Success</div>
+        <h1>From <span>Shadow to Glory</span> —<br>Small Steps Toward<br>Restored Wholeness</h1>
+        <p class="hero__sub">
+          Based on the emotional journey of Adam, the "DNA of the Heart," and the Lamed Heart Pivot — a biblically rooted, esoteric-informed path from fear, shame &amp; shadow to light, reflection &amp; restored glory.
+        </p>
+        <div class="hero__buttons">
+          <a href="coaching.html" class="btn btn-gold"><i class="fa-solid fa-sun"></i> Start Your Journey</a>
+          <a href="framework.html" class="btn btn-outline-white"><i class="fa-solid fa-book-open"></i> Explore the Framework</a>
+        </div>
+
+        <!-- Mini Quiz -->
+        <div class="hero__quiz">
+          <p>"Where are you living most of the time right now?"</p>
+          <div class="hero__quiz-options">
+            <button class="quiz-btn" data-realm="light">☀️ In the Light</button>
+            <button class="quiz-btn" data-realm="turn">🌅 At a Turning Point</button>
+            <button class="quiz-btn" data-realm="shadow">🌑 In the Shadow</button>
+            <button class="quiz-btn" data-realm="return">🌄 On the Return</button>
+          </div>
+          <div id="quiz-response" style="display:none; margin-top:1rem; font-size:0.95rem; color:var(--gold-light); font-style:italic;"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero__scroll">
+      <span>Discover</span>
+      <i class="fa-solid fa-chevron-down"></i>
+    </div>
+  </section>
+
+  <!-- ======================== FOUR REALMS ======================== -->
+  <section class="section section--cream-dark">
+    <div class="container text-center">
+      <span class="label reveal">The Four Realms</span>
+      <h2 class="section-title reveal">Adam's Emotional Journey — <em>Your</em> Map</h2>
+      <div class="divider"></div>
+      <p class="section-sub reveal">Every human being lives somewhere along this arc. The question is: where are <em>you</em> — and which direction are you moving?</p>
+
+      <div class="realm-grid">
+        <div class="realm-card realm-card--light reveal">
+          <div class="realm-badge realm-badge--light">Realm 1</div>
+          <div class="realm-card__icon">☀️</div>
+          <h3>Original Light</h3>
+          <p>Peace, belonging, and deep connection. Your true design — living as a reflection of God's image. "Bone of my bones, flesh of my flesh." Open-hearted, safe, whole.</p>
+        </div>
+        <div class="realm-card realm-card--turn reveal" style="transition-delay:0.1s">
+          <div class="realm-badge realm-badge--turn">Realm 2</div>
+          <div class="realm-card__icon">🌅</div>
+          <h3>The Turn</h3>
+          <p>"I was afraid… and I hid myself." The moment fear, shame, and blame enter. Your back turns toward the light — and a shadow begins to form inside you.</p>
+        </div>
+        <div class="realm-card realm-card--shadow reveal" style="transition-delay:0.2s">
+          <div class="realm-badge realm-badge--shadow">Realm 3</div>
+          <div class="realm-card__icon">🌑</div>
+          <h3>The Shadow</h3>
+          <p>Spiritual death &amp; contained sorrows. No reflection, no growth — like a vampire who cannot see itself. Narcissism, chaos, generational patterns, serpent energy.</p>
+        </div>
+        <div class="realm-card realm-card--return reveal" style="transition-delay:0.3s">
+          <div class="realm-badge realm-badge--return">Realm 4</div>
+          <div class="realm-card__icon">🌄</div>
+          <h3>Restored Glory</h3>
+          <p>Turning back to the light. Honest self-reflection. Vulnerability. Alignment with truth. The Dead Sea Scrolls promise: "all the glory of Adam" is recoverable — one SmallStep at a time.</p>
+        </div>
+      </div>
+
+      <div style="margin-top:2.5rem;" class="reveal">
+        <a href="framework.html" class="btn btn-gold">Explore the Full Framework →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== LAMED PIVOT ======================== -->
+  <section class="section section--dark">
+    <div class="container">
+      <div class="lamed-wrap">
+        <div class="lamed-visual reveal">
+          <div class="lamed-circle">
+            <div class="lamed-label lamed-label--top">Spirit · Awe · Glory</div>
+            <span class="lamed-letter">ל</span>
+            <div class="lamed-label lamed-label--bottom">Survival · Shame · Shadow</div>
+          </div>
+        </div>
+        <div class="reveal" style="transition-delay:0.15s">
+          <span class="label">Your Signature Concept</span>
+          <h2>The Lamed Heart Pivot</h2>
+          <div class="divider" style="margin-left:0;"></div>
+          <p>In Hebrew, <strong style="color:var(--gold-light)">Lamed (ל)</strong> is the 12th letter — the tallest in the alphabet, reaching both earth and sky. It corresponds to autosome 12 in the body's DNA, and it sits at the very center of the <strong style="color:var(--gold-light)">22-letter Heart Pattern</strong>.</p>
+          <p>Lamed is the <em>heart bridge</em> — the pivot point between:</p>
+          <ul style="list-style:none; margin:1rem 0 1.5rem; display:flex; flex-direction:column; gap:0.6rem;">
+            <li style="display:flex; gap:0.75rem; align-items:flex-start;"><i class="fa-solid fa-circle-dot" style="color:var(--gold); margin-top:5px;"></i><span style="color:var(--cream)">The lower realms — survival, trauma, fear, shame (Adam's shadow)</span></li>
+            <li style="display:flex; gap:0.75rem; align-items:flex-start;"><i class="fa-solid fa-circle-dot" style="color:var(--gold); margin-top:5px;"></i><span style="color:var(--cream)">The upper realms — spirit, awe, restored glory (Adam's original light)</span></li>
+          </ul>
+          <blockquote>"Right now your Lamed is either turning away from the light — or turning back toward it. Which way are you pointing?"</blockquote>
+          <p style="color:var(--muted); font-size:0.9rem; margin-top:1.25rem;">This is the heart of Crystal's coaching method. Every session, every SmallStep, every insight is designed to move your Lamed — just one degree — back toward the light.</p>
+          <div style="margin-top:2rem;">
+            <a href="framework.html" class="btn btn-outline">Learn More About the DNA of the Heart</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== HOW IT WORKS ======================== -->
+  <section class="section section--cream">
+    <div class="container">
+      <div class="text-center">
+        <span class="label reveal">How Coaching Works</span>
+        <h2 class="section-title reveal">Your SmallStepz Path</h2>
+        <div class="divider"></div>
+        <p class="section-sub reveal">Transformation doesn't happen in one giant leap. It happens in intentional, courageous small steps — each one turning your Lamed a little more toward the light.</p>
+      </div>
+
+      <div class="steps" style="max-width:600px; margin: 3rem auto 0;">
+        <div class="step reveal">
+          <div class="step__num">1</div>
+          <div class="step__body">
+            <h4>Map Your Realm</h4>
+            <p>We identify exactly where you are on the Light–Turn–Shadow–Return arc. No judgment — only honest, sacred recognition of your current state.</p>
+          </div>
+        </div>
+        <div class="step reveal">
+          <div class="step__num">2</div>
+          <div class="step__body">
+            <h4>Find Your Lamed Pivot</h4>
+            <p>Together, we locate the specific fear, shame, or blame pattern that has your heart turned away from the light — your personal "turning point."</p>
+          </div>
+        </div>
+        <div class="step reveal">
+          <div class="step__num">3</div>
+          <div class="step__body">
+            <h4>Choose One SmallStep</h4>
+            <p>One honest admission. One boundary. One act of self-kindness. One moment of sitting with God instead of numbing. Just one degree of turn back toward light.</p>
+          </div>
+        </div>
+        <div class="step reveal">
+          <div class="step__num">4</div>
+          <div class="step__body">
+            <h4>Walk in Restored Reflection</h4>
+            <p>As you accumulate SmallStepz, you begin to reflect God's image again — growing up, not just surviving. Spiritual death replaced by restored glory.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center" style="margin-top:2.5rem;">
+        <a href="coaching.html" class="btn btn-gold reveal">See Coaching Offers →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== STATS ======================== -->
+  <section class="section section--navy">
+    <div class="container">
+      <div class="stats-row">
+        <div class="stat-item reveal">
+          <span class="num stat-num" data-target="22" data-suffix="">0</span>
+          <span class="lbl">Letters in the<br>Heart DNA Pattern</span>
+        </div>
+        <div class="stat-item reveal">
+          <span class="num stat-num" data-target="4" data-suffix="">0</span>
+          <span class="lbl">Realms of the<br>Adam Journey</span>
+        </div>
+        <div class="stat-item reveal">
+          <span class="num stat-num" data-target="12" data-suffix="">0</span>
+          <span class="lbl">Lamed — the<br>Heart Bridge Letter</span>
+        </div>
+        <div class="stat-item reveal">
+          <span class="num stat-num" data-target="1" data-suffix="">0</span>
+          <span class="lbl">SmallStep is all<br>it takes to begin</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== COACHING PREVIEW ======================== -->
+  <section class="section section--dark">
+    <div class="container text-center">
+      <span class="label reveal">Work With Crystal</span>
+      <h2 class="section-title reveal">Choose Your Path Back to Light</h2>
+      <div class="divider"></div>
+      <p class="section-sub reveal" style="color:var(--muted);">Every offer is designed around one question: "What SmallStep will turn your Lamed toward restored glory today?"</p>
+
+      <div class="offer-grid" style="margin-top:2.5rem;">
+        <div class="offer-card reveal">
+          <div class="offer-card__icon"><i class="fa-solid fa-map"></i></div>
+          <h3>Adam Journey Session</h3>
+          <p>Identify exactly where you are on the Light–Turn–Shadow–Return arc and receive your first personalized SmallStep.</p>
+          <div class="price">$97 <span>/ 60 min</span></div>
+          <a href="coaching.html" class="btn btn-outline" style="width:100%; justify-content:center;">Book Now</a>
+        </div>
+        <div class="offer-card reveal" style="transition-delay:0.1s; border-color:rgba(201,168,76,0.5); position:relative;">
+          <div style="position:absolute; top:-14px; left:50%; transform:translateX(-50%); background:var(--gold); color:var(--midnight); font-size:0.72rem; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; padding:0.3rem 1rem; border-radius:20px;">Most Popular</div>
+          <div class="offer-card__icon"><i class="fa-solid fa-heart"></i></div>
+          <h3>Lamed Heart Pivot Session</h3>
+          <p>Deep-dive work on one specific fear, shame, or blame pattern — and the practical pivot back toward the light.</p>
+          <div class="price">$147 <span>/ 90 min</span></div>
+          <a href="coaching.html" class="btn btn-gold" style="width:100%; justify-content:center;">Book Now</a>
+        </div>
+        <div class="offer-card reveal" style="transition-delay:0.2s;">
+          <div class="offer-card__icon"><i class="fa-solid fa-moon-stars"></i></div>
+          <h3>22-Day Heart Light Reset</h3>
+          <p>A structured 22-day journey — one SmallStep per day — moving through each dimension of the Heart DNA Pattern.</p>
+          <div class="price">$444 <span>/ program</span></div>
+          <a href="coaching.html" class="btn btn-outline" style="width:100%; justify-content:center;">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== TESTIMONIALS ======================== -->
+  <section class="section section--cream-dark">
+    <div class="container text-center">
+      <span class="label reveal">Voices of Restoration</span>
+      <h2 class="section-title reveal">Walking Back Toward the Light</h2>
+      <div class="divider"></div>
+
+      <div class="testimonial-grid">
+        <div class="testimonial-card reveal">
+          <p>"Crystal helped me see that my defensiveness wasn't a character flaw — it was my Lamed turned away from the light. That one reframe changed everything. I started taking real SmallStepz for the first time in years."</p>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar">M</div>
+            <div>
+              <div class="testimonial-card__name">Marcus T.</div>
+              <div class="testimonial-card__title">Adam Journey Session</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card reveal" style="transition-delay:0.1s;">
+          <p>"I didn't realize I was living like a 'spiritual vampire' — consuming but never growing, reacting but never reflecting. The four realms framework gave me a map I could actually use."</p>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar">D</div>
+            <div>
+              <div class="testimonial-card__name">Daphne R.</div>
+              <div class="testimonial-card__title">22-Day Heart Light Reset</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card reveal" style="transition-delay:0.2s;">
+          <p>"The Lamed pivot concept is unlike anything I've found in traditional therapy or church. It's the bridge I was missing. Crystal's framework speaks to my soul and my psychology at the same time."</p>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar">J</div>
+            <div>
+              <div class="testimonial-card__name">Jerome &amp; Yolanda K.</div>
+              <div class="testimonial-card__title">Couples Lamed Session</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== BLOG PREVIEW ======================== -->
+  <section class="section section--cream">
+    <div class="container text-center">
+      <span class="label reveal">From the Blog</span>
+      <h2 class="section-title reveal">Light for the Journey</h2>
+      <div class="divider"></div>
+
+      <div class="blog-grid">
+        <a href="blog.html" class="blog-card reveal" style="color:inherit;">
+          <div class="blog-card__banner" style="background:linear-gradient(135deg,#0d1b2a,#1e3a5f);">🌑</div>
+          <div class="blog-card__body">
+            <div class="blog-card__tag">Spiritual Insight</div>
+            <h3>Why Living in Shame Turns You Into a Spiritual Vampire</h3>
+            <p>When there is no light, there is no self-reflection — and without reflection, we don't truly grow up. Here's what that means for your healing journey.</p>
+            <div class="blog-card__meta"><i class="fa-regular fa-clock"></i> 6 min read</div>
+          </div>
+        </a>
+        <a href="blog.html" class="blog-card reveal" style="color:inherit; transition-delay:0.1s;">
+          <div class="blog-card__banner" style="background:linear-gradient(135deg,#1b2d45,#2a5088);">ל</div>
+          <div class="blog-card__body">
+            <div class="blog-card__tag">The Heart Pattern</div>
+            <h3>What the 22 Hebrew Letters Reveal About the Human Heart</h3>
+            <p>From Aleph to Tav — how the alphabet maps to your autosomes and what that means for emotional healing and spiritual growth.</p>
+            <div class="blog-card__meta"><i class="fa-regular fa-clock"></i> 8 min read</div>
+          </div>
+        </a>
+        <a href="blog.html" class="blog-card reveal" style="color:inherit; transition-delay:0.2s;">
+          <div class="blog-card__banner" style="background:linear-gradient(135deg,#78350f,#c9a84c);">☀️</div>
+          <div class="blog-card__body">
+            <div class="blog-card__tag">SmallStepz</div>
+            <h3>How to Take One SmallStep Today from Shadow Toward Light</h3>
+            <p>You don't need a complete transformation — you need one degree of turn. Here are five practical SmallStepz you can take this week.</p>
+            <div class="blog-card__meta"><i class="fa-regular fa-clock"></i> 5 min read</div>
+          </div>
+        </a>
+      </div>
+
+      <div style="margin-top:2.5rem;" class="reveal">
+        <a href="blog.html" class="btn btn-gold">Read All Articles →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== CTA BANNER ======================== -->
+  <section class="section cta-banner text-center">
+    <div class="container">
+      <span class="label reveal" style="color:var(--gold);">Your Next SmallStep</span>
+      <h2 class="reveal" style="color:var(--white); max-width:640px; margin:0 auto 1rem;">You Don't Have to Stay<br>in the Shadow</h2>
+      <p class="reveal" style="color:var(--muted); max-width:500px; margin:0 auto 2.5rem;">Adam's fall is not your permanent address. Recognizing where you are is the first SmallStep — and Crystal is here to help you take the next one.</p>
+      <div class="reveal" style="display:flex; flex-wrap:wrap; gap:1rem; justify-content:center;">
+        <a href="contact.html" class="btn btn-gold"><i class="fa-solid fa-calendar-plus"></i> Book a Free Discovery Call</a>
+        <a href="about.html" class="btn btn-outline-white">Meet Crystal</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== FOOTER ======================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <span class="navbar__logo-main">SmallStepz2Success</span>
+          <span class="navbar__logo-sub" style="display:block; font-size:0.65rem; letter-spacing:0.18em; text-transform:uppercase; color:var(--muted);">Spiritual &amp; Emotional Wellness Coaching</span>
+          <p>Helping you move from Adam's shadow to restored glory — one small, courageous step at a time. Founded by Crystal C. Bingham.</p>
+        </div>
+        <div>
+          <div class="footer__heading">Navigate</div>
+          <ul class="footer__links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Crystal</a></li>
+            <li><a href="framework.html">The Framework</a></li>
+            <li><a href="coaching.html">Work With Me</a></li>
+            <li><a href="blog.html">Resources</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer__heading">Coaching</div>
+          <ul class="footer__links">
+            <li><a href="coaching.html">Adam Journey Session</a></li>
+            <li><a href="coaching.html">Lamed Heart Pivot</a></li>
+            <li><a href="coaching.html">22-Day Heart Light Reset</a></li>
+            <li><a href="coaching.html">Group Workshops</a></li>
+            <li><a href="contact.html">Book a Discovery Call</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2025 SmallStepz2Success · Crystal C. Bingham. All Rights Reserved.</p>
+        <p class="footer__notice">⚠️ The Four Realms Framework, Lamed Heart Pivot, DNA of the Heart concept, and all associated teachings are the original intellectual work of Crystal C. Bingham. Unauthorized use or reproduction constitutes spiritual and legal theft.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

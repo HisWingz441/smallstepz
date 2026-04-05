@@ -1,0 +1,160 @@
+/* ============================================================
+   SmallStepz2Success — Main JavaScript
+   ============================================================ */
+
+document.addEventListener('DOMContentLoaded', () => {
+
+  /* ---- Navbar scroll effect ---- */
+  const navbar = document.querySelector('.navbar');
+  if (navbar) {
+    const onScroll = () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 40);
+    };
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+  }
+
+  /* ---- Mobile nav ---- */
+  const hamburger  = document.getElementById('hamburger');
+  const mobileNav  = document.getElementById('mobileNav');
+  const overlay    = document.getElementById('overlay');
+
+  const openMenu  = () => {
+    hamburger?.classList.add('open');
+    mobileNav?.classList.add('open');
+    overlay?.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  };
+  const closeMenu = () => {
+    hamburger?.classList.remove('open');
+    mobileNav?.classList.remove('open');
+    overlay?.classList.remove('open');
+    document.body.style.overflow = '';
+  };
+
+  hamburger?.addEventListener('click', () => {
+    hamburger.classList.contains('open') ? closeMenu() : openMenu();
+  });
+  overlay?.addEventListener('click', closeMenu);
+  mobileNav?.querySelectorAll('a').forEach(a => a.addEventListener('click', closeMenu));
+
+  /* ---- Scroll Reveal ---- */
+  const reveals = document.querySelectorAll('.reveal');
+  if (reveals.length) {
+    const revealObs = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('visible');
+          revealObs.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+    reveals.forEach(el => revealObs.observe(el));
+  }
+
+  /* ---- Hero Quiz Buttons ---- */
+  document.querySelectorAll('.quiz-btn').forEach(btn => {
+    btn.addEventListener('click', function () {
+      document.querySelectorAll('.quiz-btn').forEach(b => b.classList.remove('selected'));
+      this.classList.add('selected');
+      const response = document.getElementById('quiz-response');
+      if (response) {
+        const realm = this.dataset.realm;
+        const msgs = {
+          light:  '✨ You\'re in your Original Light — let\'s deepen and protect it.',
+          turn:   '🌅 You\'re at a Turning Point — the Lamed pivot is right in front of you.',
+          shadow: '🌑 You\'re in the Shadow — but recognizing it is the first SmallStep back.',
+          return: '🌄 You\'re on the Return path — keep taking those small, courageous steps!'
+        };
+        response.textContent = msgs[realm] || '';
+        response.style.display = 'block';
+      }
+    });
+  });
+
+  /* ---- Stat counter animation ---- */
+  const statItems = document.querySelectorAll('.stat-num');
+  if (statItems.length) {
+    const countObs = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          animateCount(e.target);
+          countObs.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.5 });
+    statItems.forEach(el => countObs.observe(el));
+  }
+
+  function animateCount(el) {
+    const target = parseInt(el.dataset.target, 10);
+    const duration = 1800;
+    const start = performance.now();
+    const step = (now) => {
+      const progress = Math.min((now - start) / duration, 1);
+      const eased = 1 - Math.pow(1 - progress, 3);
+      el.textContent = Math.floor(eased * target) + (el.dataset.suffix || '');
+      if (progress < 1) requestAnimationFrame(step);
+    };
+    requestAnimationFrame(step);
+  }
+
+  /* ---- Smooth active nav link ---- */
+  const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+  document.querySelectorAll('.navbar__links a, .navbar__mobile a').forEach(a => {
+    if (a.getAttribute('href') === currentPage) {
+      a.classList.add('active');
+    }
+  });
+
+  /* ---- Contact form ---- */
+  const contactForm = document.getElementById('contactForm');
+  if (contactForm) {
+    contactForm.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const btn = contactForm.querySelector('[type="submit"]');
+      const orig = btn.textContent;
+      btn.textContent = 'Sending…';
+      btn.disabled = true;
+
+      // Simulate send (replace with real endpoint if needed)
+      await new Promise(r => setTimeout(r, 1400));
+
+      const name = contactForm.querySelector('[name="name"]')?.value || 'friend';
+      btn.textContent = orig;
+      btn.disabled = false;
+      contactForm.reset();
+
+      const msg = document.getElementById('form-success');
+      if (msg) {
+        msg.textContent = `Thank you, ${name}! Your message has been received. Crystal will be in touch within 48 hours. 🌟`;
+        msg.style.display = 'block';
+        setTimeout(() => { msg.style.display = 'none'; }, 8000);
+      }
+    });
+  }
+
+  /* ---- Stars generator (hero) ---- */
+  const starContainer = document.querySelector('.hero__stars');
+  if (starContainer) {
+    for (let i = 0; i < 80; i++) {
+      const star = document.createElement('span');
+      const size = Math.random() * 2.5 + 0.5;
+      star.style.cssText = `
+        position:absolute;
+        width:${size}px;
+        height:${size}px;
+        border-radius:50%;
+        background:rgba(255,255,255,${Math.random() * 0.6 + 0.2});
+        top:${Math.random() * 100}%;
+        left:${Math.random() * 100}%;
+        animation: twinkle ${Math.random() * 4 + 3}s ease-in-out ${Math.random() * 5}s infinite alternate;
+      `;
+      starContainer.appendChild(star);
+    }
+    const style = document.createElement('style');
+    style.textContent = `@keyframes twinkle{0%{opacity:0.2;transform:scale(1);}100%{opacity:0.9;transform:scale(1.4);}}`;
+    document.head.appendChild(style);
+  }
+
+});
